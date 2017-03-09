@@ -1,0 +1,863 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xmi:XMI xmi:version="20131001" xmlns:xmi="http://www.omg.org/spec/XMI/20131001" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:UMLLabProfile="http:///schemas/UMLLabProfile/NS/0" xmlns:ecore="http://www.eclipse.org/emf/2002/Ecore" xmlns:uml="http://www.eclipse.org/uml2/5.0.0/UML" xsi:schemaLocation="http:///schemas/UMLLabProfile/NS/0 pathmap://UMLLAB_PROFILES/UMLLab.profile.uml#UMLLabProfile-Annotation_2-UMLLabProfile">
+  <uml:Model xmi:id="_XeG_UANCEeexb7tRKegW9g" name="gs_uploading_files">
+    <eAnnotations xmi:id="_YWVn0ANCEeexb7tRKegW9g" source="http://ns.yatta.de/umllab">
+      <contents xmi:type="ecore:EAnnotation" xmi:id="_YWVn0QNCEeexb7tRKegW9g" source="codegen">
+        <details xmi:id="_YWVn0gNCEeexb7tRKegW9g" key="codegenDirectory" value="/gs-uploading-files/src/main/java"/>
+        <details xmi:id="_a0pdUANCEeexb7tRKegW9g" key="AssociatedSourceCode" value="/gs-uploading-files/src/main/java/hello/Application.java;580441134/1;/gs-uploading-files/src/main/java/hello/FileUploadController.java;3705527141/1;/gs-uploading-files/src/main/java/hello/storage/FileSystemStorageService.java;613560730/1;/gs-uploading-files/src/main/java/hello/storage/StorageException.java;4207409594/1;/gs-uploading-files/src/main/java/hello/storage/StorageFileNotFoundException.java;159476654/1;/gs-uploading-files/src/main/java/hello/storage/StorageService.java;4264494992/1;/gs-uploading-files/src/test/java/hello/FileUploadIntegrationTests.java;2962533741/1;/gs-uploading-files/src/test/java/hello/FileUploadTests.java;4109814637/1;/gs-uploading-files/src/main/java/hello/storage/StorageProperties.java;994035390/1;"/>
+      </contents>
+    </eAnnotations>
+    <elementImport xmi:id="_Y3sBYANCEeexb7tRKegW9g">
+      <importedElement xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#boolean"/>
+    </elementImport>
+    <elementImport xmi:id="_Y3sBYQNCEeexb7tRKegW9g">
+      <importedElement xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#byte"/>
+    </elementImport>
+    <elementImport xmi:id="_Y3sBYgNCEeexb7tRKegW9g">
+      <importedElement xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#char"/>
+    </elementImport>
+    <elementImport xmi:id="_Y3socANCEeexb7tRKegW9g">
+      <importedElement xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#double"/>
+    </elementImport>
+    <elementImport xmi:id="_Y3socQNCEeexb7tRKegW9g">
+      <importedElement xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#float"/>
+    </elementImport>
+    <elementImport xmi:id="_Y3socgNCEeexb7tRKegW9g">
+      <importedElement xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#int"/>
+    </elementImport>
+    <elementImport xmi:id="_Y3socwNCEeexb7tRKegW9g">
+      <importedElement xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#long"/>
+    </elementImport>
+    <elementImport xmi:id="_Y3tPgANCEeexb7tRKegW9g">
+      <importedElement xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#short"/>
+    </elementImport>
+    <elementImport xmi:id="_Y3t2kANCEeexb7tRKegW9g">
+      <importedElement xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+    </elementImport>
+    <packagedElement xmi:type="uml:Package" xmi:id="_Y30kQANCEeexb7tRKegW9g" name="hello">
+      <packagedElement xmi:type="uml:Package" xmi:id="_Y30kQQNCEeexb7tRKegW9g" name="storage">
+        <packagedElement xmi:type="uml:Class" xmi:id="_Y7b48ANCEeexb7tRKegW9g" name="FileSystemStorageService">
+          <ownedAttribute xmi:id="_ZKPJ8ANCEeexb7tRKegW9g" name="rootLocation" visibility="private" isLeaf="true" type="_ZIGb8ANCEeexb7tRKegW9g" isReadOnly="true" association="_ZLcq4ANCEeexb7tRKegW9g"/>
+          <interfaceRealization xmi:id="_ZIgroANCEeexb7tRKegW9g" client="_Y7b48ANCEeexb7tRKegW9g" supplier="_Y8UpwANCEeexb7tRKegW9g" contract="_Y8UpwANCEeexb7tRKegW9g"/>
+          <ownedBehavior xmi:type="uml:OpaqueBehavior" xmi:id="_ZKu5MANCEeexb7tRKegW9g" name="FileSystemStorageService" specification="_ZIig0ANCEeexb7tRKegW9g">
+            <ownedParameter xmi:id="_ZKu5MQNCEeexb7tRKegW9g" name="properties" type="_Y8874ANCEeexb7tRKegW9g"/>
+            <ownedParameter xmi:id="_ZKu5MgNCEeexb7tRKegW9g" type="_Y7b48ANCEeexb7tRKegW9g" direction="return"/>
+            <language>java</language>
+            <body>this.rootLocation = Paths.get(properties.getLocation());
+ </body>
+          </ownedBehavior>
+          <ownedBehavior xmi:type="uml:OpaqueBehavior" xmi:id="_ZKu5MwNCEeexb7tRKegW9g" name="store" specification="_ZJ2IYANCEeexb7tRKegW9g">
+            <ownedParameter xmi:id="_ZKu5NANCEeexb7tRKegW9g" name="file" type="_ZHtaYQNCEeexb7tRKegW9g"/>
+            <language>java</language>
+            <body>try {
+         if (file.isEmpty()) {
+             throw new StorageException(&quot;Failed to store empty file &quot; + file.getOriginalFilename());
+         }
+         Files.copy(file.getInputStream(), this.rootLocation.resolve(file.getOriginalFilename()));
+     } catch (IOException e) {
+         throw new StorageException(&quot;Failed to store file &quot; + file.getOriginalFilename(), e);
+     }
+ </body>
+          </ownedBehavior>
+          <ownedBehavior xmi:type="uml:OpaqueBehavior" xmi:id="_ZKvgQANCEeexb7tRKegW9g" name="loadAll" specification="_Y7lp8ANCEeexb7tRKegW9g">
+            <ownedParameter xmi:id="_ZKvgQQNCEeexb7tRKegW9g" type="_ZII4MANCEeexb7tRKegW9g" direction="return"/>
+            <language>java</language>
+            <body>try {
+         return Files.walk(this.rootLocation, 1)
+                 .filter(path -> !path.equals(this.rootLocation))
+                 .map(path -> this.rootLocation.relativize(path));
+     } catch (IOException e) {
+         throw new StorageException(&quot;Failed to read stored files&quot;, e);
+     }
+
+ </body>
+          </ownedBehavior>
+          <ownedBehavior xmi:type="uml:OpaqueBehavior" xmi:id="_ZKvgQgNCEeexb7tRKegW9g" name="load" specification="_Y7lp9ANCEeexb7tRKegW9g">
+            <ownedParameter xmi:id="_ZKvgQwNCEeexb7tRKegW9g" name="filename">
+              <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+            </ownedParameter>
+            <ownedParameter xmi:id="_ZKvgRANCEeexb7tRKegW9g" type="_ZIGb8ANCEeexb7tRKegW9g" direction="return"/>
+            <language>java</language>
+            <body>return rootLocation.resolve(filename);
+ </body>
+          </ownedBehavior>
+          <ownedBehavior xmi:type="uml:OpaqueBehavior" xmi:id="_ZKwHUANCEeexb7tRKegW9g" name="loadAsResource" specification="_Y7lp-ANCEeexb7tRKegW9g">
+            <ownedParameter xmi:id="_ZKwHUQNCEeexb7tRKegW9g" name="filename">
+              <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+            </ownedParameter>
+            <ownedParameter xmi:id="_ZKwHUgNCEeexb7tRKegW9g" type="_ZHkQcQNCEeexb7tRKegW9g" direction="return"/>
+            <language>java</language>
+            <body>try {
+         Path file = load(filename);
+         Resource resource = new UrlResource(file.toUri());
+         if(resource.exists() || resource.isReadable()) {
+             return resource;
+         }
+         else {
+             throw new StorageFileNotFoundException(&quot;Could not read file: &quot; + filename);
+
+         }
+     } catch (MalformedURLException e) {
+         throw new StorageFileNotFoundException(&quot;Could not read file: &quot; + filename, e);
+     }
+ </body>
+          </ownedBehavior>
+          <ownedBehavior xmi:type="uml:OpaqueBehavior" xmi:id="_ZKwHUwNCEeexb7tRKegW9g" name="deleteAll" specification="_Y7lp_ANCEeexb7tRKegW9g">
+            <language>java</language>
+            <body>FileSystemUtils.deleteRecursively(rootLocation.toFile());
+ </body>
+          </ownedBehavior>
+          <ownedBehavior xmi:type="uml:OpaqueBehavior" xmi:id="_ZKwHVANCEeexb7tRKegW9g" name="init" specification="_Y7uz4gNCEeexb7tRKegW9g">
+            <language>java</language>
+            <body>try {
+         Files.createDirectory(rootLocation);
+     } catch (IOException e) {
+         throw new StorageException(&quot;Could not initialize storage&quot;, e);
+     }
+ </body>
+          </ownedBehavior>
+          <ownedOperation xmi:id="_Y7lp8ANCEeexb7tRKegW9g" name="loadAll" method="_ZKvgQANCEeexb7tRKegW9g">
+            <ownedParameter xmi:id="_ZJ8PAANCEeexb7tRKegW9g" type="_ZII4MANCEeexb7tRKegW9g" direction="return"/>
+          </ownedOperation>
+          <ownedOperation xmi:id="_Y7lp9ANCEeexb7tRKegW9g" name="load" method="_ZKvgQgNCEeexb7tRKegW9g">
+            <ownedParameter xmi:id="_Y7lp9QNCEeexb7tRKegW9g" name="filename">
+              <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+            </ownedParameter>
+            <ownedParameter xmi:id="_ZJ8PAQNCEeexb7tRKegW9g" type="_ZIGb8ANCEeexb7tRKegW9g" direction="return"/>
+          </ownedOperation>
+          <ownedOperation xmi:id="_Y7lp-ANCEeexb7tRKegW9g" name="loadAsResource" method="_ZKwHUANCEeexb7tRKegW9g">
+            <ownedParameter xmi:id="_Y7lp-QNCEeexb7tRKegW9g" name="filename">
+              <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+            </ownedParameter>
+            <ownedParameter xmi:id="_ZJ82EANCEeexb7tRKegW9g" type="_ZHkQcQNCEeexb7tRKegW9g" direction="return"/>
+          </ownedOperation>
+          <ownedOperation xmi:id="_Y7lp_ANCEeexb7tRKegW9g" name="deleteAll" method="_ZKwHUwNCEeexb7tRKegW9g"/>
+          <ownedOperation xmi:id="_Y7uz4gNCEeexb7tRKegW9g" name="init" method="_ZKwHVANCEeexb7tRKegW9g"/>
+          <ownedOperation xmi:id="_ZIig0ANCEeexb7tRKegW9g" name="FileSystemStorageService" method="_ZKu5MANCEeexb7tRKegW9g">
+            <eAnnotations xmi:id="_ZIjH4QNCEeexb7tRKegW9g" source="http://www.eclipse.org/uml2/2.0.0/UML">
+              <details xmi:id="_ZIjH4gNCEeexb7tRKegW9g" key="create"/>
+            </eAnnotations>
+            <ownedParameter xmi:id="_ZIjH4ANCEeexb7tRKegW9g" name="properties" type="_Y8874ANCEeexb7tRKegW9g"/>
+            <ownedParameter xmi:id="_ZIju8ANCEeexb7tRKegW9g" type="_Y7b48ANCEeexb7tRKegW9g" direction="return"/>
+          </ownedOperation>
+          <ownedOperation xmi:id="_ZJ2IYANCEeexb7tRKegW9g" name="store" method="_ZKu5MwNCEeexb7tRKegW9g">
+            <ownedParameter xmi:id="_ZJ2IYQNCEeexb7tRKegW9g" name="file" type="_ZHtaYQNCEeexb7tRKegW9g"/>
+          </ownedOperation>
+        </packagedElement>
+        <packagedElement xmi:type="uml:Class" xmi:id="_Y8HOYANCEeexb7tRKegW9g" name="StorageException">
+          <generalization xmi:id="_ZKCVogNCEeexb7tRKegW9g" general="_ZJ-rQQNCEeexb7tRKegW9g"/>
+          <ownedBehavior xmi:type="uml:OpaqueBehavior" xmi:id="_ZKwuYANCEeexb7tRKegW9g" name="StorageException" specification="_Y8JDkANCEeexb7tRKegW9g">
+            <ownedParameter xmi:id="_ZKwuYQNCEeexb7tRKegW9g" name="message">
+              <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+            </ownedParameter>
+            <ownedParameter xmi:id="_ZKwuYgNCEeexb7tRKegW9g" type="_Y8HOYANCEeexb7tRKegW9g" direction="return"/>
+            <language>java</language>
+            <body>super(message);
+ </body>
+          </ownedBehavior>
+          <ownedBehavior xmi:type="uml:OpaqueBehavior" xmi:id="_ZKxVcANCEeexb7tRKegW9g" name="StorageException" specification="_ZKBukANCEeexb7tRKegW9g">
+            <ownedParameter xmi:id="_ZKxVcQNCEeexb7tRKegW9g" name="message">
+              <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+            </ownedParameter>
+            <ownedParameter xmi:id="_ZKxVcgNCEeexb7tRKegW9g" name="cause" type="_ZKAgcANCEeexb7tRKegW9g"/>
+            <ownedParameter xmi:id="_ZKxVcwNCEeexb7tRKegW9g" type="_Y8HOYANCEeexb7tRKegW9g" direction="return"/>
+            <language>java</language>
+            <body>super(message, cause);
+ </body>
+          </ownedBehavior>
+          <ownedOperation xmi:id="_Y8JDkANCEeexb7tRKegW9g" name="StorageException" method="_ZKwuYANCEeexb7tRKegW9g">
+            <eAnnotations xmi:id="_Y8JqoANCEeexb7tRKegW9g" source="http://www.eclipse.org/uml2/2.0.0/UML">
+              <details xmi:id="_Y8JqoQNCEeexb7tRKegW9g" key="create"/>
+            </eAnnotations>
+            <ownedParameter xmi:id="_Y8JDkQNCEeexb7tRKegW9g" name="message">
+              <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+            </ownedParameter>
+            <ownedParameter xmi:id="_Y8JqogNCEeexb7tRKegW9g" type="_Y8HOYANCEeexb7tRKegW9g" direction="return"/>
+          </ownedOperation>
+          <ownedOperation xmi:id="_ZKBukANCEeexb7tRKegW9g" name="StorageException" method="_ZKxVcANCEeexb7tRKegW9g">
+            <eAnnotations xmi:id="_ZKBukwNCEeexb7tRKegW9g" source="http://www.eclipse.org/uml2/2.0.0/UML">
+              <details xmi:id="_ZKCVoANCEeexb7tRKegW9g" key="create"/>
+            </eAnnotations>
+            <ownedParameter xmi:id="_ZKBukQNCEeexb7tRKegW9g" name="message">
+              <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+            </ownedParameter>
+            <ownedParameter xmi:id="_ZKBukgNCEeexb7tRKegW9g" name="cause" type="_ZKAgcANCEeexb7tRKegW9g"/>
+            <ownedParameter xmi:id="_ZKCVoQNCEeexb7tRKegW9g" type="_Y8HOYANCEeexb7tRKegW9g" direction="return"/>
+          </ownedOperation>
+        </packagedElement>
+        <packagedElement xmi:type="uml:Class" xmi:id="_Y8PKMANCEeexb7tRKegW9g" name="StorageFileNotFoundException">
+          <generalization xmi:id="_ZIoncANCEeexb7tRKegW9g" general="_Y8HOYANCEeexb7tRKegW9g"/>
+          <ownedBehavior xmi:type="uml:OpaqueBehavior" xmi:id="_ZKxVdANCEeexb7tRKegW9g" name="StorageFileNotFoundException" specification="_Y8Q_YANCEeexb7tRKegW9g">
+            <ownedParameter xmi:id="_ZKxVdQNCEeexb7tRKegW9g" name="message">
+              <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+            </ownedParameter>
+            <ownedParameter xmi:id="_ZKxVdgNCEeexb7tRKegW9g" type="_Y8PKMANCEeexb7tRKegW9g" direction="return"/>
+            <language>java</language>
+            <body>super(message);
+ </body>
+          </ownedBehavior>
+          <ownedBehavior xmi:type="uml:OpaqueBehavior" xmi:id="_ZKx8gANCEeexb7tRKegW9g" name="StorageFileNotFoundException" specification="_ZKC8sANCEeexb7tRKegW9g">
+            <ownedParameter xmi:id="_ZKx8gQNCEeexb7tRKegW9g" name="message">
+              <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+            </ownedParameter>
+            <ownedParameter xmi:id="_ZKx8ggNCEeexb7tRKegW9g" name="cause" type="_ZKAgcANCEeexb7tRKegW9g"/>
+            <ownedParameter xmi:id="_ZKx8gwNCEeexb7tRKegW9g" type="_Y8PKMANCEeexb7tRKegW9g" direction="return"/>
+            <language>java</language>
+            <body>super(message, cause);
+ </body>
+          </ownedBehavior>
+          <ownedOperation xmi:id="_Y8Q_YANCEeexb7tRKegW9g" name="StorageFileNotFoundException" method="_ZKxVdANCEeexb7tRKegW9g">
+            <eAnnotations xmi:id="_Y8RmcANCEeexb7tRKegW9g" source="http://www.eclipse.org/uml2/2.0.0/UML">
+              <details xmi:id="_Y8RmcQNCEeexb7tRKegW9g" key="create"/>
+            </eAnnotations>
+            <ownedParameter xmi:id="_Y8Q_YQNCEeexb7tRKegW9g" name="message">
+              <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+            </ownedParameter>
+            <ownedParameter xmi:id="_Y8RmcgNCEeexb7tRKegW9g" type="_Y8PKMANCEeexb7tRKegW9g" direction="return"/>
+          </ownedOperation>
+          <ownedOperation xmi:id="_ZKC8sANCEeexb7tRKegW9g" name="StorageFileNotFoundException" method="_ZKx8gANCEeexb7tRKegW9g">
+            <eAnnotations xmi:id="_ZKDjwQNCEeexb7tRKegW9g" source="http://www.eclipse.org/uml2/2.0.0/UML">
+              <details xmi:id="_ZKDjwgNCEeexb7tRKegW9g" key="create"/>
+            </eAnnotations>
+            <ownedParameter xmi:id="_ZKC8sQNCEeexb7tRKegW9g" name="message">
+              <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+            </ownedParameter>
+            <ownedParameter xmi:id="_ZKDjwANCEeexb7tRKegW9g" name="cause" type="_ZKAgcANCEeexb7tRKegW9g"/>
+            <ownedParameter xmi:id="_ZKDjwwNCEeexb7tRKegW9g" type="_Y8PKMANCEeexb7tRKegW9g" direction="return"/>
+          </ownedOperation>
+        </packagedElement>
+        <packagedElement xmi:type="uml:Interface" xmi:id="_Y8UpwANCEeexb7tRKegW9g" name="StorageService">
+          <ownedOperation xmi:id="_Y8V34ANCEeexb7tRKegW9g" name="init"/>
+          <ownedOperation xmi:id="_Y8XGAANCEeexb7tRKegW9g" name="loadAll">
+            <ownedParameter xmi:id="_ZKFY8ANCEeexb7tRKegW9g" type="_ZII4MANCEeexb7tRKegW9g" direction="return"/>
+          </ownedOperation>
+          <ownedOperation xmi:id="_Y8awYANCEeexb7tRKegW9g" name="load">
+            <ownedParameter xmi:id="_Y8awYQNCEeexb7tRKegW9g" name="filename">
+              <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+            </ownedParameter>
+            <ownedParameter xmi:id="_ZKGAAANCEeexb7tRKegW9g" type="_ZIGb8ANCEeexb7tRKegW9g" direction="return"/>
+          </ownedOperation>
+          <ownedOperation xmi:id="_Y8b-gANCEeexb7tRKegW9g" name="loadAsResource">
+            <ownedParameter xmi:id="_Y8b-gQNCEeexb7tRKegW9g" name="filename">
+              <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+            </ownedParameter>
+            <ownedParameter xmi:id="_ZKGAAQNCEeexb7tRKegW9g" type="_ZHkQcQNCEeexb7tRKegW9g" direction="return"/>
+          </ownedOperation>
+          <ownedOperation xmi:id="_Y8dMoANCEeexb7tRKegW9g" name="deleteAll"/>
+          <ownedOperation xmi:id="_ZKEx4ANCEeexb7tRKegW9g" name="store">
+            <ownedParameter xmi:id="_ZKEx4QNCEeexb7tRKegW9g" name="file" type="_ZHtaYQNCEeexb7tRKegW9g"/>
+          </ownedOperation>
+        </packagedElement>
+        <packagedElement xmi:type="uml:Class" xmi:id="_Y8874ANCEeexb7tRKegW9g" name="StorageProperties">
+          <ownedAttribute xmi:id="_ZKV3ogNCEeexb7tRKegW9g" name="location">
+            <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+            <defaultValue xmi:type="uml:LiteralString" xmi:id="_ZKWesANCEeexb7tRKegW9g" value="&quot;upload-dir&quot;"/>
+          </ownedAttribute>
+        </packagedElement>
+        <packagedElement xmi:type="uml:Association" xmi:id="_ZLcq4ANCEeexb7tRKegW9g" name="" memberEnd="_ZLcq4QNCEeexb7tRKegW9g _ZKPJ8ANCEeexb7tRKegW9g">
+          <ownedEnd xmi:id="_ZLcq4QNCEeexb7tRKegW9g" name="" type="_Y7b48ANCEeexb7tRKegW9g" association="_ZLcq4ANCEeexb7tRKegW9g"/>
+        </packagedElement>
+      </packagedElement>
+      <packagedElement xmi:type="uml:Class" xmi:id="_Y6e2sANCEeexb7tRKegW9g" name="Application">
+        <ownedBehavior xmi:type="uml:OpaqueBehavior" xmi:id="_ZKlIMANCEeexb7tRKegW9g" name="main" specification="_Y6uuUANCEeexb7tRKegW9g">
+          <ownedParameter xmi:id="_ZKlvQANCEeexb7tRKegW9g" name="args">
+            <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+            <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_ZKlvQQNCEeexb7tRKegW9g" value="*"/>
+          </ownedParameter>
+          <language>java</language>
+          <body>SpringApplication.run(Application.class, args);
+	</body>
+        </ownedBehavior>
+        <ownedBehavior xmi:type="uml:OpaqueBehavior" xmi:id="_ZKrO0ANCEeexb7tRKegW9g" name="init" specification="_ZHc7sANCEeexb7tRKegW9g">
+          <ownedParameter xmi:id="_ZKrO0QNCEeexb7tRKegW9g" name="storageService" type="_Y8UpwANCEeexb7tRKegW9g"/>
+          <ownedParameter xmi:id="_ZKrO0gNCEeexb7tRKegW9g" type="_ZHSjoANCEeexb7tRKegW9g" direction="return"/>
+          <language>java</language>
+          <body>return (args) -> {
+         storageService.deleteAll();
+         storageService.init();
+		};
+	</body>
+        </ownedBehavior>
+        <ownedOperation xmi:id="_Y6uuUANCEeexb7tRKegW9g" name="main" isStatic="true" method="_ZKlIMANCEeexb7tRKegW9g">
+          <ownedParameter xmi:id="_Y6vVYANCEeexb7tRKegW9g" name="args">
+            <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+            <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_Y6zm0QNCEeexb7tRKegW9g" value="*"/>
+          </ownedParameter>
+        </ownedOperation>
+        <ownedOperation xmi:id="_ZHc7sANCEeexb7tRKegW9g" name="init" visibility="package" method="_ZKrO0ANCEeexb7tRKegW9g">
+          <ownedParameter xmi:id="_ZHc7sQNCEeexb7tRKegW9g" name="storageService" type="_Y8UpwANCEeexb7tRKegW9g"/>
+          <ownedParameter xmi:id="_ZJT84ANCEeexb7tRKegW9g" type="_ZHSjoANCEeexb7tRKegW9g" direction="return"/>
+        </ownedOperation>
+      </packagedElement>
+      <packagedElement xmi:type="uml:Class" xmi:id="_Y68JsANCEeexb7tRKegW9g" name="FileUploadController">
+        <ownedAttribute xmi:id="_ZKMGoANCEeexb7tRKegW9g" name="storageService" visibility="private" isLeaf="true" type="_Y8UpwANCEeexb7tRKegW9g" isReadOnly="true" association="_ZLa1sANCEeexb7tRKegW9g"/>
+        <ownedBehavior xmi:type="uml:OpaqueBehavior" xmi:id="_ZKr14ANCEeexb7tRKegW9g" name="FileUploadController" specification="_ZH2kUANCEeexb7tRKegW9g">
+          <ownedParameter xmi:id="_ZKr14QNCEeexb7tRKegW9g" name="storageService" type="_Y8UpwANCEeexb7tRKegW9g"/>
+          <ownedParameter xmi:id="_ZKr14gNCEeexb7tRKegW9g" type="_Y68JsANCEeexb7tRKegW9g" direction="return"/>
+          <language>java</language>
+          <body>this.storageService = storageService;
+ </body>
+        </ownedBehavior>
+        <ownedBehavior xmi:type="uml:OpaqueBehavior" xmi:id="_ZKtEAANCEeexb7tRKegW9g" name="listUploadedFiles" specification="_ZJVLAANCEeexb7tRKegW9g">
+          <ownedParameter xmi:id="_ZKtEAQNCEeexb7tRKegW9g" name="model" type="_ZHrlMANCEeexb7tRKegW9g"/>
+          <ownedParameter xmi:id="_ZKtEAgNCEeexb7tRKegW9g" direction="return">
+            <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+          </ownedParameter>
+          <language>java</language>
+          <body>model.addAttribute(&quot;files&quot;, storageService
+             .loadAll()
+             .map(path ->
+                     MvcUriComponentsBuilder
+                             .fromMethodName(FileUploadController.class, &quot;serveFile&quot;, path.getFileName().toString())
+                             .build().toString())
+             .collect(Collectors.toList()));
+
+     return &quot;uploadForm&quot;;
+ </body>
+        </ownedBehavior>
+        <ownedBehavior xmi:type="uml:OpaqueBehavior" xmi:id="_ZKtrEANCEeexb7tRKegW9g" name="serveFile" specification="_Y6_NAQNCEeexb7tRKegW9g">
+          <ownedParameter xmi:id="_ZKtrEQNCEeexb7tRKegW9g" name="filename">
+            <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+          </ownedParameter>
+          <ownedParameter xmi:id="_ZKtrEgNCEeexb7tRKegW9g" type="_ZHn60ANCEeexb7tRKegW9g" direction="return"/>
+          <language>java</language>
+          <body>Resource file = storageService.loadAsResource(filename);
+     return ResponseEntity
+             .ok()
+             .header(HttpHeaders.CONTENT_DISPOSITION, &quot;attachment; filename=\&quot;&quot;+file.getFilename()+&quot;\&quot;&quot;)
+             .body(file);
+ </body>
+        </ownedBehavior>
+        <ownedBehavior xmi:type="uml:OpaqueBehavior" xmi:id="_ZKuSIANCEeexb7tRKegW9g" name="handleFileUpload" specification="_ZJb4sANCEeexb7tRKegW9g">
+          <ownedParameter xmi:id="_ZKuSIQNCEeexb7tRKegW9g" name="file" type="_ZHtaYQNCEeexb7tRKegW9g"/>
+          <ownedParameter xmi:id="_ZKuSIgNCEeexb7tRKegW9g" name="redirectAttributes" type="_ZHwdsQNCEeexb7tRKegW9g"/>
+          <ownedParameter xmi:id="_ZKuSIwNCEeexb7tRKegW9g" direction="return">
+            <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+          </ownedParameter>
+          <language>java</language>
+          <body>storageService.store(file);
+     redirectAttributes.addFlashAttribute(&quot;message&quot;,
+             &quot;You successfully uploaded &quot; + file.getOriginalFilename() + &quot;!&quot;);
+
+     return &quot;redirect:/&quot;;
+ </body>
+        </ownedBehavior>
+        <ownedBehavior xmi:type="uml:OpaqueBehavior" xmi:id="_ZKuSJANCEeexb7tRKegW9g" name="handleStorageFileNotFound" specification="_ZH5noANCEeexb7tRKegW9g">
+          <ownedParameter xmi:id="_ZKuSJQNCEeexb7tRKegW9g" name="exc" type="_Y8PKMANCEeexb7tRKegW9g"/>
+          <ownedParameter xmi:id="_ZKuSJgNCEeexb7tRKegW9g" type="_ZHn60ANCEeexb7tRKegW9g" direction="return"/>
+          <language>java</language>
+          <body>return ResponseEntity.notFound().build();
+ </body>
+        </ownedBehavior>
+        <ownedOperation xmi:id="_Y6_NAQNCEeexb7tRKegW9g" name="serveFile" method="_ZKtrEANCEeexb7tRKegW9g">
+          <ownedParameter xmi:id="_Y6_NAgNCEeexb7tRKegW9g" name="filename">
+            <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+          </ownedParameter>
+          <ownedParameter xmi:id="_ZJbRoQNCEeexb7tRKegW9g" type="_ZHn60ANCEeexb7tRKegW9g" direction="return"/>
+        </ownedOperation>
+        <ownedOperation xmi:id="_ZH2kUANCEeexb7tRKegW9g" name="FileUploadController" method="_ZKr14ANCEeexb7tRKegW9g">
+          <eAnnotations xmi:id="_ZH3LYANCEeexb7tRKegW9g" source="http://www.eclipse.org/uml2/2.0.0/UML">
+            <details xmi:id="_ZH3LYQNCEeexb7tRKegW9g" key="create"/>
+          </eAnnotations>
+          <ownedParameter xmi:id="_ZH2kUQNCEeexb7tRKegW9g" name="storageService" type="_Y8UpwANCEeexb7tRKegW9g"/>
+          <ownedParameter xmi:id="_ZH3LYgNCEeexb7tRKegW9g" type="_Y68JsANCEeexb7tRKegW9g" direction="return"/>
+        </ownedOperation>
+        <ownedOperation xmi:id="_ZH5noANCEeexb7tRKegW9g" name="handleStorageFileNotFound" method="_ZKuSJANCEeexb7tRKegW9g">
+          <ownedParameter xmi:id="_ZH5noQNCEeexb7tRKegW9g" name="exc" type="_Y8PKMANCEeexb7tRKegW9g"/>
+          <ownedParameter xmi:id="_ZJpUEANCEeexb7tRKegW9g" type="_ZHn60ANCEeexb7tRKegW9g" direction="return"/>
+        </ownedOperation>
+        <ownedOperation xmi:id="_ZJVLAANCEeexb7tRKegW9g" name="listUploadedFiles" method="_ZKtEAANCEeexb7tRKegW9g" raisedException="_ZHyS4QNCEeexb7tRKegW9g">
+          <ownedParameter xmi:id="_ZJVLAQNCEeexb7tRKegW9g" name="model" type="_ZHrlMANCEeexb7tRKegW9g"/>
+          <ownedParameter xmi:id="_ZJVLAgNCEeexb7tRKegW9g" direction="return">
+            <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+          </ownedParameter>
+        </ownedOperation>
+        <ownedOperation xmi:id="_ZJb4sANCEeexb7tRKegW9g" name="handleFileUpload" method="_ZKuSIANCEeexb7tRKegW9g">
+          <ownedParameter xmi:id="_ZJcfwANCEeexb7tRKegW9g" name="file" type="_ZHtaYQNCEeexb7tRKegW9g"/>
+          <ownedParameter xmi:id="_ZJcfwQNCEeexb7tRKegW9g" name="redirectAttributes" type="_ZHwdsQNCEeexb7tRKegW9g"/>
+          <ownedParameter xmi:id="_ZJm30ANCEeexb7tRKegW9g" direction="return">
+            <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+          </ownedParameter>
+        </ownedOperation>
+      </packagedElement>
+      <packagedElement xmi:type="uml:Class" xmi:id="_Y8gP8ANCEeexb7tRKegW9g" name="FileUploadIntegrationTests">
+        <eAnnotations xmi:id="_Y8g3AANCEeexb7tRKegW9g" source="http://ns.yatta.de/umllab">
+          <contents xmi:type="ecore:EAnnotation" xmi:id="_Y8g3AQNCEeexb7tRKegW9g" source="codegen">
+            <details xmi:id="_Y8g3AgNCEeexb7tRKegW9g" key="codegenDirectory" value="/gs-uploading-files/src/test/java"/>
+          </contents>
+        </eAnnotations>
+        <ownedAttribute xmi:id="_ZKQYEANCEeexb7tRKegW9g" name="restTemplate" visibility="private" type="_ZIxxYQNCEeexb7tRKegW9g" association="_ZLdR8QNCEeexb7tRKegW9g"/>
+        <ownedAttribute xmi:id="_ZKRmMgNCEeexb7tRKegW9g" name="storageService" visibility="private" type="_Y8UpwANCEeexb7tRKegW9g" association="_ZLegEQNCEeexb7tRKegW9g"/>
+        <ownedAttribute xmi:id="_ZKS0UQNCEeexb7tRKegW9g" name="port" visibility="private">
+          <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#int"/>
+        </ownedAttribute>
+        <ownedBehavior xmi:type="uml:OpaqueBehavior" xmi:id="_ZKx8hANCEeexb7tRKegW9g" name="shouldUploadFile" specification="_Y8j6UANCEeexb7tRKegW9g">
+          <language>java</language>
+          <body>ClassPathResource resource = new ClassPathResource(&quot;testupload.txt&quot;, getClass());
+
+     MultiValueMap&lt;String, Object> map = new LinkedMultiValueMap&lt;String, Object>();
+     map.add(&quot;file&quot;, resource);
+     ResponseEntity&lt;String> response = this.restTemplate.postForEntity(&quot;/&quot;, map, String.class);
+
+     assertThat(response.getStatusCode()).isEqualByComparingTo(HttpStatus.FOUND);
+     assertThat(response.getHeaders().getLocation().toString()).startsWith(&quot;http://localhost:&quot; + this.port + &quot;/&quot;);
+     then(storageService).should().store(any(MultipartFile.class));
+ </body>
+        </ownedBehavior>
+        <ownedBehavior xmi:type="uml:OpaqueBehavior" xmi:id="_ZKyjkANCEeexb7tRKegW9g" name="shouldDownloadFile" specification="_Y8lIcANCEeexb7tRKegW9g">
+          <language>java</language>
+          <body>ClassPathResource resource = new ClassPathResource(&quot;testupload.txt&quot;, getClass());
+     given(this.storageService.loadAsResource(&quot;testupload.txt&quot;)).willReturn(resource);
+
+     ResponseEntity&lt;String> response = this.restTemplate
+             .getForEntity(&quot;/files/{filename}&quot;, String.class, &quot;testupload.txt&quot;);
+
+     assertThat(response.getStatusCodeValue()).isEqualTo(200);
+     assertThat(response.getHeaders().getFirst(HttpHeaders.CONTENT_DISPOSITION))
+             .isEqualTo(&quot;attachment; filename=\&quot;testupload.txt\&quot;&quot;);
+     assertThat(response.getBody()).isEqualTo(&quot;Spring Framework&quot;);
+ </body>
+        </ownedBehavior>
+        <ownedOperation xmi:id="_Y8j6UANCEeexb7tRKegW9g" name="shouldUploadFile" method="_ZKx8hANCEeexb7tRKegW9g" raisedException="_ZKHOIANCEeexb7tRKegW9g"/>
+        <ownedOperation xmi:id="_Y8lIcANCEeexb7tRKegW9g" name="shouldDownloadFile" method="_ZKyjkANCEeexb7tRKegW9g" raisedException="_ZKHOIANCEeexb7tRKegW9g"/>
+      </packagedElement>
+      <packagedElement xmi:type="uml:Class" xmi:id="_Y8uSYANCEeexb7tRKegW9g" name="FileUploadTests">
+        <eAnnotations xmi:id="_Y8u5cANCEeexb7tRKegW9g" source="http://ns.yatta.de/umllab">
+          <contents xmi:type="ecore:EAnnotation" xmi:id="_Y8u5cQNCEeexb7tRKegW9g" source="codegen">
+            <details xmi:id="_Y8u5cgNCEeexb7tRKegW9g" key="codegenDirectory" value="/gs-uploading-files/src/test/java"/>
+          </contents>
+        </eAnnotations>
+        <ownedAttribute xmi:id="_ZKUCcANCEeexb7tRKegW9g" name="mvc" visibility="private" type="_ZJIWsANCEeexb7tRKegW9g" association="_ZLfuMANCEeexb7tRKegW9g"/>
+        <ownedAttribute xmi:id="_ZKVQkANCEeexb7tRKegW9g" name="storageService" visibility="private" type="_Y8UpwANCEeexb7tRKegW9g" association="_ZLg8UANCEeexb7tRKegW9g"/>
+        <ownedBehavior xmi:type="uml:OpaqueBehavior" xmi:id="_ZKyjkQNCEeexb7tRKegW9g" name="shouldListAllFiles" specification="_Y8xVsANCEeexb7tRKegW9g">
+          <language>java</language>
+          <body>given(this.storageService.loadAll())
+             .willReturn(Stream.of(Paths.get(&quot;first.txt&quot;), Paths.get(&quot;second.txt&quot;)));
+
+     this.mvc.perform(get(&quot;/&quot;))
+             .andExpect(status().isOk())
+             .andExpect(model().attribute(&quot;files&quot;,
+                     Matchers.contains(&quot;http://localhost/files/first.txt&quot;, &quot;http://localhost/files/second.txt&quot;)));
+ </body>
+        </ownedBehavior>
+        <ownedBehavior xmi:type="uml:OpaqueBehavior" xmi:id="_ZKyjkgNCEeexb7tRKegW9g" name="shouldSaveUploadedFile" specification="_Y8zK4ANCEeexb7tRKegW9g">
+          <language>java</language>
+          <body>MockMultipartFile multipartFile =
+             new MockMultipartFile(&quot;file&quot;, &quot;test.txt&quot;, &quot;text/plain&quot;, &quot;Spring Framework&quot;.getBytes());
+     this.mvc.perform(fileUpload(&quot;/&quot;).file(multipartFile))
+             .andExpect(status().isFound())
+             .andExpect(header().string(&quot;Location&quot;, &quot;/&quot;));
+
+     then(this.storageService).should().store(multipartFile);
+ </body>
+        </ownedBehavior>
+        <ownedBehavior xmi:type="uml:OpaqueBehavior" xmi:id="_ZKyjkwNCEeexb7tRKegW9g" name="should404WhenMissingFile" specification="_Y81AEANCEeexb7tRKegW9g">
+          <language>java</language>
+          <body>given(this.storageService.loadAsResource(&quot;test.txt&quot;))
+             .willThrow(StorageFileNotFoundException.class);
+
+     this.mvc.perform(get(&quot;/files/test.txt&quot;))
+             .andExpect(status().isNotFound());
+ </body>
+        </ownedBehavior>
+        <ownedOperation xmi:id="_Y8xVsANCEeexb7tRKegW9g" name="shouldListAllFiles" method="_ZKyjkQNCEeexb7tRKegW9g" raisedException="_ZKHOIANCEeexb7tRKegW9g"/>
+        <ownedOperation xmi:id="_Y8zK4ANCEeexb7tRKegW9g" name="shouldSaveUploadedFile" method="_ZKyjkgNCEeexb7tRKegW9g" raisedException="_ZKHOIANCEeexb7tRKegW9g"/>
+        <ownedOperation xmi:id="_Y81AEANCEeexb7tRKegW9g" name="should404WhenMissingFile" method="_ZKyjkwNCEeexb7tRKegW9g" raisedException="_ZKHOIANCEeexb7tRKegW9g"/>
+      </packagedElement>
+      <packagedElement xmi:type="uml:Association" xmi:id="_ZLa1sANCEeexb7tRKegW9g" name="" memberEnd="_ZLa1sQNCEeexb7tRKegW9g _ZKMGoANCEeexb7tRKegW9g">
+        <ownedEnd xmi:id="_ZLa1sQNCEeexb7tRKegW9g" name="" type="_Y68JsANCEeexb7tRKegW9g" association="_ZLa1sANCEeexb7tRKegW9g"/>
+      </packagedElement>
+      <packagedElement xmi:type="uml:Association" xmi:id="_ZLdR8QNCEeexb7tRKegW9g" name="" memberEnd="_ZLdR8gNCEeexb7tRKegW9g _ZKQYEANCEeexb7tRKegW9g">
+        <ownedEnd xmi:id="_ZLdR8gNCEeexb7tRKegW9g" name="" type="_Y8gP8ANCEeexb7tRKegW9g" association="_ZLdR8QNCEeexb7tRKegW9g"/>
+      </packagedElement>
+      <packagedElement xmi:type="uml:Association" xmi:id="_ZLegEQNCEeexb7tRKegW9g" name="" memberEnd="_ZLegEgNCEeexb7tRKegW9g _ZKRmMgNCEeexb7tRKegW9g">
+        <ownedEnd xmi:id="_ZLegEgNCEeexb7tRKegW9g" name="" type="_Y8gP8ANCEeexb7tRKegW9g" association="_ZLegEQNCEeexb7tRKegW9g"/>
+      </packagedElement>
+      <packagedElement xmi:type="uml:Association" xmi:id="_ZLfuMANCEeexb7tRKegW9g" name="" memberEnd="_ZLfuMQNCEeexb7tRKegW9g _ZKUCcANCEeexb7tRKegW9g">
+        <ownedEnd xmi:id="_ZLfuMQNCEeexb7tRKegW9g" name="" type="_Y8uSYANCEeexb7tRKegW9g" association="_ZLfuMANCEeexb7tRKegW9g"/>
+      </packagedElement>
+      <packagedElement xmi:type="uml:Association" xmi:id="_ZLg8UANCEeexb7tRKegW9g" name="" memberEnd="_ZLg8UQNCEeexb7tRKegW9g _ZKVQkANCEeexb7tRKegW9g">
+        <ownedEnd xmi:id="_ZLg8UQNCEeexb7tRKegW9g" name="" type="_Y8uSYANCEeexb7tRKegW9g" association="_ZLg8UANCEeexb7tRKegW9g"/>
+      </packagedElement>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Package" xmi:id="_Y31LUANCEeexb7tRKegW9g" name="org">
+      <packagedElement xmi:type="uml:Package" xmi:id="_Y31LUQNCEeexb7tRKegW9g" name="springframework">
+        <packagedElement xmi:type="uml:Package" xmi:id="_Y31LUgNCEeexb7tRKegW9g" name="boot">
+          <packagedElement xmi:type="uml:Package" xmi:id="_Y31LUwNCEeexb7tRKegW9g" name="autoconfigure">
+            <packagedElement xmi:type="uml:Interface" xmi:id="_ZHW1EANCEeexb7tRKegW9g" name="SpringBootApplication"/>
+          </packagedElement>
+          <packagedElement xmi:type="uml:Package" xmi:id="_Y31LVANCEeexb7tRKegW9g" name="context">
+            <packagedElement xmi:type="uml:Package" xmi:id="_Y31LVQNCEeexb7tRKegW9g" name="properties">
+              <packagedElement xmi:type="uml:Interface" xmi:id="_ZHYqQANCEeexb7tRKegW9g" name="EnableConfigurationProperties"/>
+              <packagedElement xmi:type="uml:Interface" xmi:id="_ZJN2QANCEeexb7tRKegW9g" name="ConfigurationProperties"/>
+            </packagedElement>
+            <packagedElement xmi:type="uml:Package" xmi:id="_Y5ibgQNCEeexb7tRKegW9g" name="embedded">
+              <packagedElement xmi:type="uml:Interface" xmi:id="_ZIuHAANCEeexb7tRKegW9g" name="LocalServerPort"/>
+            </packagedElement>
+          </packagedElement>
+          <packagedElement xmi:type="uml:Package" xmi:id="_Y5ibggNCEeexb7tRKegW9g" name="test">
+            <packagedElement xmi:type="uml:Package" xmi:id="_Y5ibgwNCEeexb7tRKegW9g" name="context">
+              <packagedElement xmi:type="uml:Interface" xmi:id="_ZIvVIQNCEeexb7tRKegW9g" name="SpringBootTest"/>
+            </packagedElement>
+            <packagedElement xmi:type="uml:Package" xmi:id="_Y5ibhANCEeexb7tRKegW9g" name="mock">
+              <packagedElement xmi:type="uml:Package" xmi:id="_Y5ibhQNCEeexb7tRKegW9g" name="mockito">
+                <packagedElement xmi:type="uml:Interface" xmi:id="_ZIwjQQNCEeexb7tRKegW9g" name="MockBean"/>
+              </packagedElement>
+            </packagedElement>
+            <packagedElement xmi:type="uml:Package" xmi:id="_Y5ibhgNCEeexb7tRKegW9g" name="web">
+              <packagedElement xmi:type="uml:Package" xmi:id="_Y5ibhwNCEeexb7tRKegW9g" name="client">
+                <packagedElement xmi:type="uml:Class" xmi:id="_ZIxxYQNCEeexb7tRKegW9g" name="TestRestTemplate"/>
+              </packagedElement>
+            </packagedElement>
+            <packagedElement xmi:type="uml:Package" xmi:id="_Y50vYANCEeexb7tRKegW9g" name="autoconfigure">
+              <packagedElement xmi:type="uml:Package" xmi:id="_Y50vYQNCEeexb7tRKegW9g" name="web">
+                <packagedElement xmi:type="uml:Package" xmi:id="_Y51WcANCEeexb7tRKegW9g" name="servlet">
+                  <packagedElement xmi:type="uml:Interface" xmi:id="_ZJC3IANCEeexb7tRKegW9g" name="AutoConfigureMockMvc"/>
+                </packagedElement>
+              </packagedElement>
+            </packagedElement>
+          </packagedElement>
+          <packagedElement xmi:type="uml:Interface" xmi:id="_ZHSjoANCEeexb7tRKegW9g" name="CommandLineRunner"/>
+          <packagedElement xmi:type="uml:Class" xmi:id="_ZHU_4ANCEeexb7tRKegW9g" name="SpringApplication"/>
+        </packagedElement>
+        <packagedElement xmi:type="uml:Package" xmi:id="_Y31LVgNCEeexb7tRKegW9g" name="context">
+          <packagedElement xmi:type="uml:Package" xmi:id="_Y31LVwNCEeexb7tRKegW9g" name="annotation">
+            <packagedElement xmi:type="uml:Interface" xmi:id="_ZHZ4YQNCEeexb7tRKegW9g" name="Bean"/>
+          </packagedElement>
+        </packagedElement>
+        <packagedElement xmi:type="uml:Package" xmi:id="_Y4ItUANCEeexb7tRKegW9g" name="beans">
+          <packagedElement xmi:type="uml:Package" xmi:id="_Y4ItUQNCEeexb7tRKegW9g" name="factory">
+            <packagedElement xmi:type="uml:Package" xmi:id="_Y4ItUgNCEeexb7tRKegW9g" name="annotation">
+              <packagedElement xmi:type="uml:Interface" xmi:id="_ZHibQANCEeexb7tRKegW9g" name="Autowired"/>
+            </packagedElement>
+          </packagedElement>
+        </packagedElement>
+        <packagedElement xmi:type="uml:Package" xmi:id="_Y4ItUwNCEeexb7tRKegW9g" name="core">
+          <packagedElement xmi:type="uml:Package" xmi:id="_Y4ItVANCEeexb7tRKegW9g" name="io">
+            <packagedElement xmi:type="uml:Interface" xmi:id="_ZHkQcQNCEeexb7tRKegW9g" name="Resource"/>
+            <packagedElement xmi:type="uml:Class" xmi:id="_ZH_HMANCEeexb7tRKegW9g" name="UrlResource"/>
+            <packagedElement xmi:type="uml:Class" xmi:id="_ZIy_gQNCEeexb7tRKegW9g" name="ClassPathResource"/>
+          </packagedElement>
+        </packagedElement>
+        <packagedElement xmi:type="uml:Package" xmi:id="_Y4ItVQNCEeexb7tRKegW9g" name="http">
+          <packagedElement xmi:type="uml:Class" xmi:id="_ZHmFoANCEeexb7tRKegW9g" name="HttpHeaders"/>
+          <packagedElement xmi:type="uml:Class" xmi:id="_ZHn60ANCEeexb7tRKegW9g" name="ResponseEntity"/>
+          <packagedElement xmi:type="uml:Enumeration" xmi:id="_ZI0NoQNCEeexb7tRKegW9g" name="HttpStatus"/>
+        </packagedElement>
+        <packagedElement xmi:type="uml:Package" xmi:id="_Y4R3QANCEeexb7tRKegW9g" name="stereotype">
+          <packagedElement xmi:type="uml:Interface" xmi:id="_ZHpwAANCEeexb7tRKegW9g" name="Controller"/>
+          <packagedElement xmi:type="uml:Interface" xmi:id="_ZIAVUQNCEeexb7tRKegW9g" name="Service"/>
+        </packagedElement>
+        <packagedElement xmi:type="uml:Package" xmi:id="_Y4R3QQNCEeexb7tRKegW9g" name="ui">
+          <packagedElement xmi:type="uml:Interface" xmi:id="_ZHrlMANCEeexb7tRKegW9g" name="Model"/>
+        </packagedElement>
+        <packagedElement xmi:type="uml:Package" xmi:id="_Y4R3QgNCEeexb7tRKegW9g" name="web">
+          <packagedElement xmi:type="uml:Package" xmi:id="_Y4R3QwNCEeexb7tRKegW9g" name="bind">
+            <packagedElement xmi:type="uml:Package" xmi:id="_Y4R3RANCEeexb7tRKegW9g" name="annotation"/>
+          </packagedElement>
+          <packagedElement xmi:type="uml:Package" xmi:id="_Y4R3RQNCEeexb7tRKegW9g" name="multipart">
+            <packagedElement xmi:type="uml:Interface" xmi:id="_ZHtaYQNCEeexb7tRKegW9g" name="MultipartFile"/>
+          </packagedElement>
+          <packagedElement xmi:type="uml:Package" xmi:id="_Y4boQANCEeexb7tRKegW9g" name="servlet">
+            <packagedElement xmi:type="uml:Package" xmi:id="_Y4boQQNCEeexb7tRKegW9g" name="mvc">
+              <packagedElement xmi:type="uml:Package" xmi:id="_Y4boQgNCEeexb7tRKegW9g" name="method">
+                <packagedElement xmi:type="uml:Package" xmi:id="_Y4boQwNCEeexb7tRKegW9g" name="annotation">
+                  <packagedElement xmi:type="uml:Class" xmi:id="_ZHvPkANCEeexb7tRKegW9g" name="MvcUriComponentsBuilder"/>
+                </packagedElement>
+              </packagedElement>
+              <packagedElement xmi:type="uml:Package" xmi:id="_Y4boRANCEeexb7tRKegW9g" name="support">
+                <packagedElement xmi:type="uml:Interface" xmi:id="_ZHwdsQNCEeexb7tRKegW9g" name="RedirectAttributes"/>
+              </packagedElement>
+            </packagedElement>
+          </packagedElement>
+        </packagedElement>
+        <packagedElement xmi:type="uml:Package" xmi:id="_Y4y0oANCEeexb7tRKegW9g" name="util">
+          <packagedElement xmi:type="uml:Class" xmi:id="_ZICKgQNCEeexb7tRKegW9g" name="FileSystemUtils"/>
+          <packagedElement xmi:type="uml:Class" xmi:id="_ZI3Q8QNCEeexb7tRKegW9g" name="LinkedMultiValueMap"/>
+          <packagedElement xmi:type="uml:Interface" xmi:id="_ZI4fEANCEeexb7tRKegW9g" name="MultiValueMap"/>
+        </packagedElement>
+        <packagedElement xmi:type="uml:Package" xmi:id="_Y5ibiANCEeexb7tRKegW9g" name="test">
+          <packagedElement xmi:type="uml:Package" xmi:id="_Y5ibiQNCEeexb7tRKegW9g" name="context">
+            <packagedElement xmi:type="uml:Package" xmi:id="_Y5ibigNCEeexb7tRKegW9g" name="junit4">
+              <packagedElement xmi:type="uml:Class" xmi:id="_ZI2C0QNCEeexb7tRKegW9g" name="SpringRunner"/>
+            </packagedElement>
+          </packagedElement>
+          <packagedElement xmi:type="uml:Package" xmi:id="_Y53ysANCEeexb7tRKegW9g" name="web">
+            <packagedElement xmi:type="uml:Package" xmi:id="_Y53ysQNCEeexb7tRKegW9g" name="servlet">
+              <packagedElement xmi:type="uml:Package" xmi:id="_Y54ZwANCEeexb7tRKegW9g" name="request">
+                <packagedElement xmi:type="uml:Class" xmi:id="_ZJJk0ANCEeexb7tRKegW9g" name="MockMvcRequestBuilders"/>
+              </packagedElement>
+              <packagedElement xmi:type="uml:Package" xmi:id="_Y55A0ANCEeexb7tRKegW9g" name="result">
+                <packagedElement xmi:type="uml:Class" xmi:id="_ZJKy8ANCEeexb7tRKegW9g" name="MockMvcResultMatchers"/>
+              </packagedElement>
+              <packagedElement xmi:type="uml:Class" xmi:id="_ZJIWsANCEeexb7tRKegW9g" name="MockMvc"/>
+            </packagedElement>
+          </packagedElement>
+        </packagedElement>
+        <packagedElement xmi:type="uml:Package" xmi:id="_Y519gANCEeexb7tRKegW9g" name="mock">
+          <packagedElement xmi:type="uml:Package" xmi:id="_Y519gQNCEeexb7tRKegW9g" name="web">
+            <packagedElement xmi:type="uml:Class" xmi:id="_ZJFTYANCEeexb7tRKegW9g" name="MockMultipartFile"/>
+          </packagedElement>
+        </packagedElement>
+      </packagedElement>
+      <packagedElement xmi:type="uml:Package" xmi:id="_Y5YqgANCEeexb7tRKegW9g" name="junit">
+        <packagedElement xmi:type="uml:Package" xmi:id="_Y5ibgANCEeexb7tRKegW9g" name="runner">
+          <packagedElement xmi:type="uml:Interface" xmi:id="_ZIs44QNCEeexb7tRKegW9g" name="RunWith"/>
+        </packagedElement>
+        <packagedElement xmi:type="uml:Interface" xmi:id="_ZIrqwANCEeexb7tRKegW9g" name="Test"/>
+      </packagedElement>
+      <packagedElement xmi:type="uml:Package" xmi:id="_Y5ibiwNCEeexb7tRKegW9g" name="assertj">
+        <packagedElement xmi:type="uml:Package" xmi:id="_Y5ibjANCEeexb7tRKegW9g" name="core">
+          <packagedElement xmi:type="uml:Package" xmi:id="_Y5ibjQNCEeexb7tRKegW9g" name="api">
+            <packagedElement xmi:type="uml:Class" xmi:id="_ZI5GIQNCEeexb7tRKegW9g" name="Assertions"/>
+          </packagedElement>
+        </packagedElement>
+      </packagedElement>
+      <packagedElement xmi:type="uml:Package" xmi:id="_Y5ibjgNCEeexb7tRKegW9g" name="mockito">
+        <packagedElement xmi:type="uml:Class" xmi:id="_ZI67UANCEeexb7tRKegW9g" name="BDDMockito"/>
+        <packagedElement xmi:type="uml:Class" xmi:id="_ZI8JcANCEeexb7tRKegW9g" name="Matchers"/>
+      </packagedElement>
+      <packagedElement xmi:type="uml:Package" xmi:id="_Y50IUANCEeexb7tRKegW9g" name="hamcrest">
+        <packagedElement xmi:type="uml:Class" xmi:id="_ZJBB8ANCEeexb7tRKegW9g" name="Matchers"/>
+      </packagedElement>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Package" xmi:id="_Y4boRQNCEeexb7tRKegW9g" name="java">
+      <packagedElement xmi:type="uml:Package" xmi:id="_Y4boRgNCEeexb7tRKegW9g" name="io">
+        <packagedElement xmi:type="uml:Class" xmi:id="_ZHyS4QNCEeexb7tRKegW9g" name="IOException"/>
+      </packagedElement>
+      <packagedElement xmi:type="uml:Package" xmi:id="_Y4boRwNCEeexb7tRKegW9g" name="util">
+        <packagedElement xmi:type="uml:Package" xmi:id="_Y4boSANCEeexb7tRKegW9g" name="stream">
+          <packagedElement xmi:type="uml:Class" xmi:id="_ZH0IEANCEeexb7tRKegW9g" name="Collectors"/>
+          <packagedElement xmi:type="uml:Interface" xmi:id="_ZII4MANCEeexb7tRKegW9g" name="Stream"/>
+        </packagedElement>
+      </packagedElement>
+      <packagedElement xmi:type="uml:Package" xmi:id="_Y4y0oQNCEeexb7tRKegW9g" name="net">
+        <packagedElement xmi:type="uml:Class" xmi:id="_ZIDYoQNCEeexb7tRKegW9g" name="MalformedURLException"/>
+      </packagedElement>
+      <packagedElement xmi:type="uml:Package" xmi:id="_Y4y0ogNCEeexb7tRKegW9g" name="nio">
+        <packagedElement xmi:type="uml:Package" xmi:id="_Y4y0owNCEeexb7tRKegW9g" name="file">
+          <packagedElement xmi:type="uml:Class" xmi:id="_ZIFN0QNCEeexb7tRKegW9g" name="Files"/>
+          <packagedElement xmi:type="uml:Interface" xmi:id="_ZIGb8ANCEeexb7tRKegW9g" name="Path"/>
+          <packagedElement xmi:type="uml:Class" xmi:id="_ZIHqEANCEeexb7tRKegW9g" name="Paths"/>
+        </packagedElement>
+      </packagedElement>
+      <packagedElement xmi:type="uml:Package" xmi:id="_ZJ-rQANCEeexb7tRKegW9g" name="lang">
+        <packagedElement xmi:type="uml:Class" xmi:id="_ZJ-rQQNCEeexb7tRKegW9g" name="RuntimeException"/>
+        <packagedElement xmi:type="uml:Class" xmi:id="_ZKAgcANCEeexb7tRKegW9g" name="Throwable"/>
+        <packagedElement xmi:type="uml:Class" xmi:id="_ZKHOIANCEeexb7tRKegW9g" name="Exception"/>
+      </packagedElement>
+    </packagedElement>
+    <profileApplication xmi:id="_YWagUANCEeexb7tRKegW9g">
+      <eAnnotations xmi:id="_YWpw4ANCEeexb7tRKegW9g" source="http://www.eclipse.org/uml2/2.0.0/UML">
+        <references xmi:type="ecore:EPackage" href="pathmap://UMLLAB_PROFILES/UMLLab.profile.uml#UMLLabProfile-Annotation_2-UMLLabProfile"/>
+      </eAnnotations>
+      <appliedProfile href="pathmap://UMLLAB_PROFILES/UMLLab.profile.uml#UMLLabProfile"/>
+    </profileApplication>
+  </uml:Model>
+  <UMLLabProfile:TargetLanguage xmi:id="_YW4aYANCEeexb7tRKegW9g" base_Package="_XeG_UANCEeexb7tRKegW9g">
+    <languageName>java</languageName>
+  </UMLLabProfile:TargetLanguage>
+  <UMLLabProfile:LegacyStyledElement xmi:id="_Y6onsANCEeexb7tRKegW9g" base_Element="_Y6e2sANCEeexb7tRKegW9g"/>
+  <UMLLabProfile:StyledElement xmi:id="_Y6zm0ANCEeexb7tRKegW9g" base_Element="_Y6uuUANCEeexb7tRKegW9g"/>
+  <UMLLabProfile:Annotations xmi:id="_Y634QANCEeexb7tRKegW9g" base_Element="_Y6e2sANCEeexb7tRKegW9g">
+    <annotations xmi:id="_Y64fUANCEeexb7tRKegW9g" name="SpringBootApplication"/>
+    <annotations xmi:id="_Y64fUQNCEeexb7tRKegW9g" name="EnableConfigurationProperties">
+      <annotationParameters xmi:id="_Y65GYANCEeexb7tRKegW9g" skipName="true" skipArray="true">
+        <valueSpecifications xmi:type="uml:LiteralString" xmi:id="_ZKzxsANCEeexb7tRKegW9g" value="StorageProperties.class"/>
+      </annotationParameters>
+    </annotations>
+  </UMLLabProfile:Annotations>
+  <UMLLabProfile:LegacyStyledElement xmi:id="_Y6_NAANCEeexb7tRKegW9g" base_Element="_Y68JsANCEeexb7tRKegW9g"/>
+  <UMLLabProfile:Generics xmi:id="_Y6_NAwNCEeexb7tRKegW9g" genericsValue="Resource" base_Element="_Y6_NAQNCEeexb7tRKegW9g"/>
+  <UMLLabProfile:Annotations xmi:id="_Y6_NBANCEeexb7tRKegW9g" base_Element="_Y6_NAgNCEeexb7tRKegW9g">
+    <annotations xmi:id="_Y6_NBQNCEeexb7tRKegW9g" name="PathVariable"/>
+  </UMLLabProfile:Annotations>
+  <UMLLabProfile:Annotations xmi:id="_Y7I-AANCEeexb7tRKegW9g" base_Element="_Y6_NAQNCEeexb7tRKegW9g">
+    <annotations xmi:id="_Y7I-AQNCEeexb7tRKegW9g" name="GetMapping">
+      <annotationParameters xmi:id="_Y7I-AgNCEeexb7tRKegW9g" skipName="true" skipArray="true">
+        <valueSpecifications xmi:type="uml:LiteralString" xmi:id="_ZK0YwQNCEeexb7tRKegW9g" value="&quot;/files/{filename:.+}&quot;"/>
+      </annotationParameters>
+    </annotations>
+    <annotations xmi:id="_Y7I-AwNCEeexb7tRKegW9g" name="ResponseBody"/>
+  </UMLLabProfile:Annotations>
+  <UMLLabProfile:Annotations xmi:id="_Y7SH8ANCEeexb7tRKegW9g" base_Element="_Y68JsANCEeexb7tRKegW9g">
+    <annotations xmi:id="_Y7SH8QNCEeexb7tRKegW9g" name="Controller"/>
+  </UMLLabProfile:Annotations>
+  <UMLLabProfile:LegacyStyledElement xmi:id="_Y7b48QNCEeexb7tRKegW9g" base_Element="_Y7b48ANCEeexb7tRKegW9g"/>
+  <UMLLabProfile:Generics xmi:id="_Y7lp8QNCEeexb7tRKegW9g" genericsValue="Path" base_Element="_Y7lp8ANCEeexb7tRKegW9g"/>
+  <UMLLabProfile:Annotations xmi:id="_Y7lp8gNCEeexb7tRKegW9g" base_Element="_Y7lp8ANCEeexb7tRKegW9g">
+    <annotations xmi:id="_Y7lp8wNCEeexb7tRKegW9g" name="Override"/>
+  </UMLLabProfile:Annotations>
+  <UMLLabProfile:Annotations xmi:id="_Y7lp9gNCEeexb7tRKegW9g" base_Element="_Y7lp9ANCEeexb7tRKegW9g">
+    <annotations xmi:id="_Y7lp9wNCEeexb7tRKegW9g" name="Override"/>
+  </UMLLabProfile:Annotations>
+  <UMLLabProfile:Annotations xmi:id="_Y7lp-gNCEeexb7tRKegW9g" base_Element="_Y7lp-ANCEeexb7tRKegW9g">
+    <annotations xmi:id="_Y7lp-wNCEeexb7tRKegW9g" name="Override"/>
+  </UMLLabProfile:Annotations>
+  <UMLLabProfile:Annotations xmi:id="_Y7uz4ANCEeexb7tRKegW9g" base_Element="_Y7lp_ANCEeexb7tRKegW9g">
+    <annotations xmi:id="_Y7uz4QNCEeexb7tRKegW9g" name="Override"/>
+  </UMLLabProfile:Annotations>
+  <UMLLabProfile:Annotations xmi:id="_Y7uz4wNCEeexb7tRKegW9g" base_Element="_Y7uz4gNCEeexb7tRKegW9g">
+    <annotations xmi:id="_Y7uz5ANCEeexb7tRKegW9g" name="Override"/>
+  </UMLLabProfile:Annotations>
+  <UMLLabProfile:Annotations xmi:id="_Y7uz5QNCEeexb7tRKegW9g" base_Element="_Y7b48ANCEeexb7tRKegW9g">
+    <annotations xmi:id="_Y7uz5gNCEeexb7tRKegW9g" name="Service"/>
+  </UMLLabProfile:Annotations>
+  <UMLLabProfile:Generics xmi:id="_Y8ZiQANCEeexb7tRKegW9g" genericsValue="Path" base_Element="_Y8XGAANCEeexb7tRKegW9g"/>
+  <UMLLabProfile:LegacyStyledElement xmi:id="_Y8iFIANCEeexb7tRKegW9g" base_Element="_Y8gP8ANCEeexb7tRKegW9g"/>
+  <UMLLabProfile:Annotations xmi:id="_Y8khYANCEeexb7tRKegW9g" base_Element="_Y8j6UANCEeexb7tRKegW9g">
+    <annotations xmi:id="_Y8khYQNCEeexb7tRKegW9g" name="Test"/>
+  </UMLLabProfile:Annotations>
+  <UMLLabProfile:Annotations xmi:id="_Y8mWkANCEeexb7tRKegW9g" base_Element="_Y8lIcANCEeexb7tRKegW9g">
+    <annotations xmi:id="_Y8mWkQNCEeexb7tRKegW9g" name="Test"/>
+  </UMLLabProfile:Annotations>
+  <UMLLabProfile:Annotations xmi:id="_Y8nksANCEeexb7tRKegW9g" base_Element="_Y8gP8ANCEeexb7tRKegW9g">
+    <annotations xmi:id="_Y8nksQNCEeexb7tRKegW9g" name="RunWith">
+      <annotationParameters xmi:id="_Y8nksgNCEeexb7tRKegW9g" skipName="true" skipArray="true">
+        <valueSpecifications xmi:type="uml:LiteralString" xmi:id="_ZK1m4ANCEeexb7tRKegW9g" value="SpringRunner.class"/>
+      </annotationParameters>
+    </annotations>
+    <annotations xmi:id="_Y8oLwANCEeexb7tRKegW9g" name="SpringBootTest">
+      <annotationParameters xmi:id="_Y8oLwQNCEeexb7tRKegW9g" name="webEnvironment" skipArray="true">
+        <valueSpecifications xmi:type="uml:LiteralString" xmi:id="_ZK1m4QNCEeexb7tRKegW9g" value="SpringBootTest.WebEnvironment.RANDOM_PORT"/>
+      </annotationParameters>
+    </annotations>
+  </UMLLabProfile:Annotations>
+  <UMLLabProfile:LegacyStyledElement xmi:id="_Y8wHkANCEeexb7tRKegW9g" base_Element="_Y8uSYANCEeexb7tRKegW9g"/>
+  <UMLLabProfile:Annotations xmi:id="_Y8x8wANCEeexb7tRKegW9g" base_Element="_Y8xVsANCEeexb7tRKegW9g">
+    <annotations xmi:id="_Y8yj0ANCEeexb7tRKegW9g" name="Test"/>
+  </UMLLabProfile:Annotations>
+  <UMLLabProfile:Annotations xmi:id="_Y8zx8ANCEeexb7tRKegW9g" base_Element="_Y8zK4ANCEeexb7tRKegW9g">
+    <annotations xmi:id="_Y80ZAANCEeexb7tRKegW9g" name="Test"/>
+  </UMLLabProfile:Annotations>
+  <UMLLabProfile:Annotations xmi:id="_Y81nIANCEeexb7tRKegW9g" base_Element="_Y81AEANCEeexb7tRKegW9g">
+    <annotations xmi:id="_Y81nIQNCEeexb7tRKegW9g" name="Test"/>
+  </UMLLabProfile:Annotations>
+  <UMLLabProfile:Annotations xmi:id="_Y821QANCEeexb7tRKegW9g" base_Element="_Y8uSYANCEeexb7tRKegW9g">
+    <annotations xmi:id="_Y821QQNCEeexb7tRKegW9g" name="RunWith">
+      <annotationParameters xmi:id="_Y84DYANCEeexb7tRKegW9g" skipName="true" skipArray="true">
+        <valueSpecifications xmi:type="uml:LiteralString" xmi:id="_ZK1m4gNCEeexb7tRKegW9g" value="SpringRunner.class"/>
+      </annotationParameters>
+    </annotations>
+    <annotations xmi:id="_Y84DYQNCEeexb7tRKegW9g" name="AutoConfigureMockMvc"/>
+    <annotations xmi:id="_Y84DYgNCEeexb7tRKegW9g" name="SpringBootTest"/>
+  </UMLLabProfile:Annotations>
+  <UMLLabProfile:LegacyStyledElement xmi:id="_Y8-KAANCEeexb7tRKegW9g" base_Element="_Y8874ANCEeexb7tRKegW9g"/>
+  <UMLLabProfile:Annotations xmi:id="_Y9JwMANCEeexb7tRKegW9g" base_Element="_Y8874ANCEeexb7tRKegW9g">
+    <annotations xmi:id="_Y9JwMQNCEeexb7tRKegW9g" name="ConfigurationProperties">
+      <annotationParameters xmi:id="_Y9JwMgNCEeexb7tRKegW9g" skipName="true" skipArray="true">
+        <valueSpecifications xmi:type="uml:LiteralString" xmi:id="_ZK2N8ANCEeexb7tRKegW9g" value="&quot;storage&quot;"/>
+      </annotationParameters>
+    </annotations>
+  </UMLLabProfile:Annotations>
+  <UMLLabProfile:Reference xmi:id="_ZHUY0ANCEeexb7tRKegW9g" base_Element="_ZHSjoANCEeexb7tRKegW9g"/>
+  <UMLLabProfile:Reference xmi:id="_ZHWOAANCEeexb7tRKegW9g" base_Element="_ZHU_4ANCEeexb7tRKegW9g"/>
+  <UMLLabProfile:Reference xmi:id="_ZHYDMANCEeexb7tRKegW9g" base_Element="_ZHW1EANCEeexb7tRKegW9g"/>
+  <UMLLabProfile:Reference xmi:id="_ZHZ4YANCEeexb7tRKegW9g" base_Element="_ZHYqQANCEeexb7tRKegW9g"/>
+  <UMLLabProfile:Reference xmi:id="_ZHbtkANCEeexb7tRKegW9g" base_Element="_ZHZ4YQNCEeexb7tRKegW9g"/>
+  <UMLLabProfile:Annotations xmi:id="_ZHf_AANCEeexb7tRKegW9g" base_Element="_ZHc7sANCEeexb7tRKegW9g">
+    <annotations xmi:id="_ZHf_AQNCEeexb7tRKegW9g" name="Bean"/>
+  </UMLLabProfile:Annotations>
+  <UMLLabProfile:Reference xmi:id="_ZHkQcANCEeexb7tRKegW9g" base_Element="_ZHibQANCEeexb7tRKegW9g"/>
+  <UMLLabProfile:Reference xmi:id="_ZHlekANCEeexb7tRKegW9g" base_Element="_ZHkQcQNCEeexb7tRKegW9g"/>
+  <UMLLabProfile:Reference xmi:id="_ZHnTwANCEeexb7tRKegW9g" base_Element="_ZHmFoANCEeexb7tRKegW9g"/>
+  <UMLLabProfile:Reference xmi:id="_ZHpI8ANCEeexb7tRKegW9g" base_Element="_ZHn60ANCEeexb7tRKegW9g"/>
+  <UMLLabProfile:Reference xmi:id="_ZHq-IANCEeexb7tRKegW9g" base_Element="_ZHpwAANCEeexb7tRKegW9g"/>
+  <UMLLabProfile:Reference xmi:id="_ZHtaYANCEeexb7tRKegW9g" base_Element="_ZHrlMANCEeexb7tRKegW9g"/>
+  <UMLLabProfile:Reference xmi:id="_ZHuogANCEeexb7tRKegW9g" base_Element="_ZHtaYQNCEeexb7tRKegW9g"/>
+  <UMLLabProfile:Reference xmi:id="_ZHwdsANCEeexb7tRKegW9g" base_Element="_ZHvPkANCEeexb7tRKegW9g"/>
+  <UMLLabProfile:Reference xmi:id="_ZHyS4ANCEeexb7tRKegW9g" base_Element="_ZHwdsQNCEeexb7tRKegW9g"/>
+  <UMLLabProfile:Reference xmi:id="_ZHzhAANCEeexb7tRKegW9g" base_Element="_ZHyS4QNCEeexb7tRKegW9g"/>
+  <UMLLabProfile:Reference xmi:id="_ZH1WMANCEeexb7tRKegW9g" base_Element="_ZH0IEANCEeexb7tRKegW9g"/>
+  <UMLLabProfile:Annotations xmi:id="_ZH3ycANCEeexb7tRKegW9g" base_Element="_ZH2kUANCEeexb7tRKegW9g">
+    <annotations xmi:id="_ZH4ZgANCEeexb7tRKegW9g" name="Autowired"/>
+  </UMLLabProfile:Annotations>
+  <UMLLabProfile:Annotations xmi:id="_ZH61wANCEeexb7tRKegW9g" base_Element="_ZH5noANCEeexb7tRKegW9g">
+    <annotations xmi:id="_ZH7c0ANCEeexb7tRKegW9g" name="ExceptionHandler">
+      <annotationParameters xmi:id="_ZH7c0QNCEeexb7tRKegW9g" skipName="true" skipArray="true">
+        <valueSpecifications xmi:type="uml:LiteralString" xmi:id="_ZK0_0ANCEeexb7tRKegW9g" value="StorageFileNotFoundException.class"/>
+      </annotationParameters>
+    </annotations>
+  </UMLLabProfile:Annotations>
+  <UMLLabProfile:Reference xmi:id="_ZIAVUANCEeexb7tRKegW9g" base_Element="_ZH_HMANCEeexb7tRKegW9g"/>
+  <UMLLabProfile:Reference xmi:id="_ZICKgANCEeexb7tRKegW9g" base_Element="_ZIAVUQNCEeexb7tRKegW9g"/>
+  <UMLLabProfile:Reference xmi:id="_ZIDYoANCEeexb7tRKegW9g" base_Element="_ZICKgQNCEeexb7tRKegW9g"/>
+  <UMLLabProfile:Reference xmi:id="_ZIFN0ANCEeexb7tRKegW9g" base_Element="_ZIDYoQNCEeexb7tRKegW9g"/>
+  <UMLLabProfile:Reference xmi:id="_ZIF04ANCEeexb7tRKegW9g" base_Element="_ZIFN0QNCEeexb7tRKegW9g"/>
+  <UMLLabProfile:Reference xmi:id="_ZIHDAANCEeexb7tRKegW9g" base_Element="_ZIGb8ANCEeexb7tRKegW9g"/>
+  <UMLLabProfile:Reference xmi:id="_ZIIRIANCEeexb7tRKegW9g" base_Element="_ZIHqEANCEeexb7tRKegW9g"/>
+  <UMLLabProfile:Reference xmi:id="_ZIJfQANCEeexb7tRKegW9g" base_Element="_ZII4MANCEeexb7tRKegW9g"/>
+  <UMLLabProfile:Annotations xmi:id="_ZIkWAANCEeexb7tRKegW9g" base_Element="_ZIig0ANCEeexb7tRKegW9g">
+    <annotations xmi:id="_ZIkWAQNCEeexb7tRKegW9g" name="Autowired"/>
+  </UMLLabProfile:Annotations>
+  <UMLLabProfile:Reference xmi:id="_ZIs44ANCEeexb7tRKegW9g" base_Element="_ZIrqwANCEeexb7tRKegW9g"/>
+  <UMLLabProfile:Reference xmi:id="_ZItf8ANCEeexb7tRKegW9g" base_Element="_ZIs44QNCEeexb7tRKegW9g"/>
+  <UMLLabProfile:Reference xmi:id="_ZIvVIANCEeexb7tRKegW9g" base_Element="_ZIuHAANCEeexb7tRKegW9g"/>
+  <UMLLabProfile:Reference xmi:id="_ZIwjQANCEeexb7tRKegW9g" base_Element="_ZIvVIQNCEeexb7tRKegW9g"/>
+  <UMLLabProfile:Reference xmi:id="_ZIxxYANCEeexb7tRKegW9g" base_Element="_ZIwjQQNCEeexb7tRKegW9g"/>
+  <UMLLabProfile:Reference xmi:id="_ZIy_gANCEeexb7tRKegW9g" base_Element="_ZIxxYQNCEeexb7tRKegW9g"/>
+  <UMLLabProfile:Reference xmi:id="_ZI0NoANCEeexb7tRKegW9g" base_Element="_ZIy_gQNCEeexb7tRKegW9g"/>
+  <UMLLabProfile:Reference xmi:id="_ZI2C0ANCEeexb7tRKegW9g" base_Element="_ZI0NoQNCEeexb7tRKegW9g"/>
+  <UMLLabProfile:Reference xmi:id="_ZI3Q8ANCEeexb7tRKegW9g" base_Element="_ZI2C0QNCEeexb7tRKegW9g"/>
+  <UMLLabProfile:Reference xmi:id="_ZI34AANCEeexb7tRKegW9g" base_Element="_ZI3Q8QNCEeexb7tRKegW9g"/>
+  <UMLLabProfile:Reference xmi:id="_ZI5GIANCEeexb7tRKegW9g" base_Element="_ZI4fEANCEeexb7tRKegW9g"/>
+  <UMLLabProfile:Reference xmi:id="_ZI6UQANCEeexb7tRKegW9g" base_Element="_ZI5GIQNCEeexb7tRKegW9g"/>
+  <UMLLabProfile:Reference xmi:id="_ZI7iYANCEeexb7tRKegW9g" base_Element="_ZI67UANCEeexb7tRKegW9g"/>
+  <UMLLabProfile:Reference xmi:id="_ZI9XkANCEeexb7tRKegW9g" base_Element="_ZI8JcANCEeexb7tRKegW9g"/>
+  <UMLLabProfile:Reference xmi:id="_ZJCQEANCEeexb7tRKegW9g" base_Element="_ZJBB8ANCEeexb7tRKegW9g"/>
+  <UMLLabProfile:Reference xmi:id="_ZJEsUANCEeexb7tRKegW9g" base_Element="_ZJC3IANCEeexb7tRKegW9g"/>
+  <UMLLabProfile:Reference xmi:id="_ZJHvoANCEeexb7tRKegW9g" base_Element="_ZJFTYANCEeexb7tRKegW9g"/>
+  <UMLLabProfile:Reference xmi:id="_ZJI9wANCEeexb7tRKegW9g" base_Element="_ZJIWsANCEeexb7tRKegW9g"/>
+  <UMLLabProfile:Reference xmi:id="_ZJKL4ANCEeexb7tRKegW9g" base_Element="_ZJJk0ANCEeexb7tRKegW9g"/>
+  <UMLLabProfile:Reference xmi:id="_ZJLaAANCEeexb7tRKegW9g" base_Element="_ZJKy8ANCEeexb7tRKegW9g"/>
+  <UMLLabProfile:Reference xmi:id="_ZJPEYANCEeexb7tRKegW9g" base_Element="_ZJN2QANCEeexb7tRKegW9g"/>
+  <UMLLabProfile:Annotations xmi:id="_ZJaqkANCEeexb7tRKegW9g" base_Element="_ZJVLAANCEeexb7tRKegW9g">
+    <annotations xmi:id="_ZJaqkQNCEeexb7tRKegW9g" name="GetMapping">
+      <annotationParameters xmi:id="_ZJbRoANCEeexb7tRKegW9g" skipName="true" skipArray="true">
+        <valueSpecifications xmi:type="uml:LiteralString" xmi:id="_ZK0YwANCEeexb7tRKegW9g" value="&quot;/&quot;"/>
+      </annotationParameters>
+    </annotations>
+  </UMLLabProfile:Annotations>
+  <UMLLabProfile:Annotations xmi:id="_ZJne4ANCEeexb7tRKegW9g" base_Element="_ZJcfwANCEeexb7tRKegW9g">
+    <annotations xmi:id="_ZJne4QNCEeexb7tRKegW9g" name="RequestParam">
+      <annotationParameters xmi:id="_ZJoF8ANCEeexb7tRKegW9g" skipName="true" skipArray="true">
+        <valueSpecifications xmi:type="uml:LiteralString" xmi:id="_ZK0YwwNCEeexb7tRKegW9g" value="&quot;file&quot;"/>
+      </annotationParameters>
+    </annotations>
+  </UMLLabProfile:Annotations>
+  <UMLLabProfile:Annotations xmi:id="_ZJoF8QNCEeexb7tRKegW9g" base_Element="_ZJb4sANCEeexb7tRKegW9g">
+    <annotations xmi:id="_ZJoF8gNCEeexb7tRKegW9g" name="PostMapping">
+      <annotationParameters xmi:id="_ZJoF8wNCEeexb7tRKegW9g" skipName="true" skipArray="true">
+        <valueSpecifications xmi:type="uml:LiteralString" xmi:id="_ZK0YwgNCEeexb7tRKegW9g" value="&quot;/&quot;"/>
+      </annotationParameters>
+    </annotations>
+  </UMLLabProfile:Annotations>
+  <UMLLabProfile:Annotations xmi:id="_ZJ7A4ANCEeexb7tRKegW9g" base_Element="_ZJ2IYANCEeexb7tRKegW9g">
+    <annotations xmi:id="_ZJ7n8ANCEeexb7tRKegW9g" name="Override"/>
+  </UMLLabProfile:Annotations>
+  <UMLLabProfile:Reference xmi:id="_ZJ_5YANCEeexb7tRKegW9g" base_Element="_ZJ-rQQNCEeexb7tRKegW9g"/>
+  <UMLLabProfile:Reference xmi:id="_ZKBHgANCEeexb7tRKegW9g" base_Element="_ZKAgcANCEeexb7tRKegW9g"/>
+  <UMLLabProfile:Reference xmi:id="_ZKIcQANCEeexb7tRKegW9g" base_Element="_ZKHOIANCEeexb7tRKegW9g"/>
+  <UMLLabProfile:Annotations xmi:id="_ZKRmMANCEeexb7tRKegW9g" base_Element="_ZKQYEANCEeexb7tRKegW9g">
+    <annotations xmi:id="_ZKRmMQNCEeexb7tRKegW9g" name="Autowired"/>
+  </UMLLabProfile:Annotations>
+  <UMLLabProfile:Annotations xmi:id="_ZKSNQANCEeexb7tRKegW9g" base_Element="_ZKRmMgNCEeexb7tRKegW9g">
+    <annotations xmi:id="_ZKS0UANCEeexb7tRKegW9g" name="MockBean"/>
+  </UMLLabProfile:Annotations>
+  <UMLLabProfile:Annotations xmi:id="_ZKTbYANCEeexb7tRKegW9g" base_Element="_ZKS0UQNCEeexb7tRKegW9g">
+    <annotations xmi:id="_ZKTbYQNCEeexb7tRKegW9g" name="LocalServerPort"/>
+  </UMLLabProfile:Annotations>
+  <UMLLabProfile:Annotations xmi:id="_ZKUpgANCEeexb7tRKegW9g" base_Element="_ZKUCcANCEeexb7tRKegW9g">
+    <annotations xmi:id="_ZKUpgQNCEeexb7tRKegW9g" name="Autowired"/>
+  </UMLLabProfile:Annotations>
+  <UMLLabProfile:Annotations xmi:id="_ZKV3oANCEeexb7tRKegW9g" base_Element="_ZKVQkANCEeexb7tRKegW9g">
+    <annotations xmi:id="_ZKV3oQNCEeexb7tRKegW9g" name="MockBean"/>
+  </UMLLabProfile:Annotations>
+  <UMLLabProfile:StyledElement xmi:id="_ZKXFwANCEeexb7tRKegW9g" base_Element="_ZKV3ogNCEeexb7tRKegW9g"/>
+  <UMLLabProfile:Reference xmi:id="_ZLcD0ANCEeexb7tRKegW9g" base_Element="_ZLa1sANCEeexb7tRKegW9g"/>
+  <UMLLabProfile:Reference xmi:id="_ZLdR8ANCEeexb7tRKegW9g" base_Element="_ZLcq4ANCEeexb7tRKegW9g"/>
+  <UMLLabProfile:Reference xmi:id="_ZLegEANCEeexb7tRKegW9g" base_Element="_ZLdR8QNCEeexb7tRKegW9g"/>
+  <UMLLabProfile:Reference xmi:id="_ZLfHIANCEeexb7tRKegW9g" base_Element="_ZLegEQNCEeexb7tRKegW9g"/>
+  <UMLLabProfile:Reference xmi:id="_ZLgVQANCEeexb7tRKegW9g" base_Element="_ZLfuMANCEeexb7tRKegW9g"/>
+  <UMLLabProfile:Reference xmi:id="_ZLhjYANCEeexb7tRKegW9g" base_Element="_ZLg8UANCEeexb7tRKegW9g"/>
+</xmi:XMI>

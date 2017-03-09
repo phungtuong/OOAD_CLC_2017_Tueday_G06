@@ -1,0 +1,753 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<com.yattasolutions.uml.diagrams.classifier:ClassDiagram xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:com.yattasolutions.uml.diagrams.classifier="http://ns.yatta-solutions.com/umllab/diagrams/classifier/1.1.0" xmi:id="_XhRBAANCEeexb7tRKegW9g">
+  <modelElement href="gs-uploading-files.uml#_Y30kQQNCEeexb7tRKegW9g"/>
+  <edges xsi:type="com.yattasolutions.uml.diagrams.classifier:AssociationVisual" xmi:id="_heLWEANCEeexb7tRKegW9g" source="_heMkOANCEeexb7tRKegW9g">
+    <modelElement href="gs-uploading-files.uml#_ZLcq4ANCEeexb7tRKegW9g"/>
+    <stereotypes xmi:id="_heMkMANCEeexb7tRKegW9g" name="Reference">
+      <modelElement href="gs-uploading-files.uml#_ZLdR8ANCEeexb7tRKegW9g"/>
+    </stereotypes>
+    <nameVisual xmi:id="_heMkMQNCEeexb7tRKegW9g" text=""/>
+    <sourceRole xmi:id="_heMkMgNCEeexb7tRKegW9g" aggregationKind="NONE" name="">
+      <modelElement href="gs-uploading-files.uml#_ZLcq4QNCEeexb7tRKegW9g"/>
+      <visibility xmi:id="_heMkMwNCEeexb7tRKegW9g" label="+"/>
+      <cardinality xmi:id="_heMkNANCEeexb7tRKegW9g" label="1" max="1" min="1"/>
+    </sourceRole>
+    <targetRole xmi:id="_heMkNQNCEeexb7tRKegW9g" aggregationKind="NONE" name="rootLocation" navigable="true">
+      <modelElement href="gs-uploading-files.uml#_ZKPJ8ANCEeexb7tRKegW9g"/>
+      <visibility xmi:id="_heMkNgNCEeexb7tRKegW9g" label="-"/>
+      <cardinality xmi:id="_heMkNwNCEeexb7tRKegW9g" label="1" max="1" min="1"/>
+    </targetRole>
+  </edges>
+  <edges xsi:type="com.yattasolutions.uml.diagrams.classifier:GeneralizationVisual" xmi:id="_hiQk0ANCEeexb7tRKegW9g" sourceAnchor="427.0,0.0" targetAnchor="320.0,101.0" superClass="_hhQfQANCEeexb7tRKegW9g" subClass="_hijfwANCEeexb7tRKegW9g">
+    <modelElement href="gs-uploading-files.uml#_ZIoncANCEeexb7tRKegW9g"/>
+  </edges>
+  <edges xsi:type="com.yattasolutions.uml.diagrams.classifier:GeneralizationVisual" xmi:id="_hjukcANCEeexb7tRKegW9g" sourceAnchor="377.0,0.0" targetAnchor="206.0,240.0" dashed="true" superClass="_hkA4UANCEeexb7tRKegW9g" subClass="_heMkOANCEeexb7tRKegW9g">
+    <modelElement href="gs-uploading-files.uml#_ZIgroANCEeexb7tRKegW9g"/>
+  </edges>
+  <edges xsi:type="com.yattasolutions.uml.diagrams.classifier:AssociationVisual" xmi:id="_hpNhYANCEeexb7tRKegW9g" sourceAnchor="744.0,106.0" targetAnchor="0.0,120.0" target="_hkA4UANCEeexb7tRKegW9g" source="_hq_DAANCEeexb7tRKegW9g">
+    <modelElement href="gs-uploading-files.uml#_ZLa1sANCEeexb7tRKegW9g"/>
+    <stereotypes xmi:id="_hqsvIANCEeexb7tRKegW9g" name="Reference">
+      <modelElement href="gs-uploading-files.uml#_ZLcD0ANCEeexb7tRKegW9g"/>
+    </stereotypes>
+    <nameVisual xmi:id="_hqrhAANCEeexb7tRKegW9g" text="">
+      <visualProperties xmi:id="_iMra0ANCEeexb7tRKegW9g" position="-86.0,-13.5"/>
+    </nameVisual>
+    <sourceRole xmi:id="_hqrhAQNCEeexb7tRKegW9g" aggregationKind="NONE" name="">
+      <modelElement href="gs-uploading-files.uml#_ZLa1sQNCEeexb7tRKegW9g"/>
+      <visualProperties xmi:id="_iMploANCEeexb7tRKegW9g" position="5.0,-71.5"/>
+      <visibility xmi:id="_hq9N0ANCEeexb7tRKegW9g" label="+"/>
+      <cardinality xmi:id="_hq8mwANCEeexb7tRKegW9g" label="1" max="1" min="1"/>
+    </sourceRole>
+    <targetRole xmi:id="_hqsIEANCEeexb7tRKegW9g" aggregationKind="NONE" name="storageService" navigable="true">
+      <modelElement href="gs-uploading-files.uml#_ZKMGoANCEeexb7tRKegW9g"/>
+      <visualProperties xmi:id="_iMsB4ANCEeexb7tRKegW9g" position="-137.0,6.5"/>
+      <visibility xmi:id="_hq9N0gNCEeexb7tRKegW9g" label="-"/>
+      <cardinality xmi:id="_hq9N0QNCEeexb7tRKegW9g" label="1" max="1" min="1"/>
+    </targetRole>
+  </edges>
+  <edges xsi:type="com.yattasolutions.uml.diagrams.classifier:AssociationVisual" xmi:id="_htN3oANCEeexb7tRKegW9g" sourceAnchor="0.0,96.0" targetAnchor="412.0,120.0" target="_hkA4UANCEeexb7tRKegW9g" source="_hvTiUANCEeexb7tRKegW9g">
+    <modelElement href="gs-uploading-files.uml#_ZLegEQNCEeexb7tRKegW9g"/>
+    <stereotypes xmi:id="_huqCEANCEeexb7tRKegW9g" name="Reference">
+      <modelElement href="gs-uploading-files.uml#_ZLfHIANCEeexb7tRKegW9g"/>
+    </stereotypes>
+    <nameVisual xmi:id="_hupbAANCEeexb7tRKegW9g" text="">
+      <visualProperties xmi:id="_iM3oEANCEeexb7tRKegW9g" position="42.0,-13.5"/>
+    </nameVisual>
+    <sourceRole xmi:id="_hupbAQNCEeexb7tRKegW9g" aggregationKind="NONE" name="">
+      <modelElement href="gs-uploading-files.uml#_ZLegEgNCEeexb7tRKegW9g"/>
+      <visualProperties xmi:id="_iM2Z8ANCEeexb7tRKegW9g" position="-21.5,6.5"/>
+      <visibility xmi:id="_hur3QQNCEeexb7tRKegW9g" label="+"/>
+      <cardinality xmi:id="_hur3QANCEeexb7tRKegW9g" label="1" max="1" min="1"/>
+    </sourceRole>
+    <targetRole xmi:id="_hupbAgNCEeexb7tRKegW9g" aggregationKind="NONE" name="storageService" navigable="true">
+      <modelElement href="gs-uploading-files.uml#_ZKRmMgNCEeexb7tRKegW9g"/>
+      <visualProperties xmi:id="_iM4PIANCEeexb7tRKegW9g" position="5.0,-71.49999999999989"/>
+      <visibility xmi:id="_hur3QwNCEeexb7tRKegW9g" label="-"/>
+      <cardinality xmi:id="_hur3QgNCEeexb7tRKegW9g" label="1" max="1" min="1"/>
+    </targetRole>
+  </edges>
+  <edges xsi:type="com.yattasolutions.uml.diagrams.classifier:AssociationVisual" xmi:id="_hux94ANCEeexb7tRKegW9g" source="_hvTiUANCEeexb7tRKegW9g">
+    <modelElement href="gs-uploading-files.uml#_ZLdR8QNCEeexb7tRKegW9g"/>
+    <stereotypes xmi:id="_hux94QNCEeexb7tRKegW9g" name="Reference">
+      <modelElement href="gs-uploading-files.uml#_ZLegEANCEeexb7tRKegW9g"/>
+    </stereotypes>
+    <nameVisual xmi:id="_hux94gNCEeexb7tRKegW9g" text=""/>
+    <sourceRole xmi:id="_hux94wNCEeexb7tRKegW9g" aggregationKind="NONE" name="">
+      <modelElement href="gs-uploading-files.uml#_ZLdR8gNCEeexb7tRKegW9g"/>
+      <visibility xmi:id="_hux95ANCEeexb7tRKegW9g" label="+"/>
+      <cardinality xmi:id="_hux95QNCEeexb7tRKegW9g" label="1" max="1" min="1"/>
+    </sourceRole>
+    <targetRole xmi:id="_hux95gNCEeexb7tRKegW9g" aggregationKind="NONE" name="restTemplate" navigable="true">
+      <modelElement href="gs-uploading-files.uml#_ZKQYEANCEeexb7tRKegW9g"/>
+      <visibility xmi:id="_hux95wNCEeexb7tRKegW9g" label="-"/>
+      <cardinality xmi:id="_hux96ANCEeexb7tRKegW9g" label="1" max="1" min="1"/>
+    </targetRole>
+  </edges>
+  <edges xsi:type="com.yattasolutions.uml.diagrams.classifier:AssociationVisual" xmi:id="_hwvswANCEeexb7tRKegW9g" sourceAnchor="162.0,190.0" targetAnchor="206.0,0.0" target="_hkA4UANCEeexb7tRKegW9g" source="_hzLVsANCEeexb7tRKegW9g">
+    <modelElement href="gs-uploading-files.uml#_ZLg8UANCEeexb7tRKegW9g"/>
+    <stereotypes xmi:id="_hxy1oANCEeexb7tRKegW9g" name="Reference">
+      <modelElement href="gs-uploading-files.uml#_ZLhjYANCEeexb7tRKegW9g"/>
+    </stereotypes>
+    <nameVisual xmi:id="_hxyOkANCEeexb7tRKegW9g" text="">
+      <visualProperties xmi:id="_iNEcYANCEeexb7tRKegW9g" position="-23.0,-13.5"/>
+    </nameVisual>
+    <sourceRole xmi:id="_hxyOkQNCEeexb7tRKegW9g" aggregationKind="NONE" name="">
+      <modelElement href="gs-uploading-files.uml#_ZLg8UQNCEeexb7tRKegW9g"/>
+      <visualProperties xmi:id="_iNCnMANCEeexb7tRKegW9g" position="4.5,5.5"/>
+      <visibility xmi:id="_hx1R4ANCEeexb7tRKegW9g" label="+"/>
+      <cardinality xmi:id="_hx0q0ANCEeexb7tRKegW9g" label="1" max="1" min="1"/>
+    </sourceRole>
+    <targetRole xmi:id="_hxyOkgNCEeexb7tRKegW9g" aggregationKind="NONE" name="storageService" navigable="true">
+      <modelElement href="gs-uploading-files.uml#_ZKVQkANCEeexb7tRKegW9g"/>
+      <visualProperties xmi:id="_iNFDcANCEeexb7tRKegW9g" position="-144.0,-70.0"/>
+      <visibility xmi:id="_hx148QNCEeexb7tRKegW9g" label="-"/>
+      <cardinality xmi:id="_hx148ANCEeexb7tRKegW9g" label="1" max="1" min="1"/>
+    </targetRole>
+  </edges>
+  <edges xsi:type="com.yattasolutions.uml.diagrams.classifier:AssociationVisual" xmi:id="_hx5jUANCEeexb7tRKegW9g" source="_hzLVsANCEeexb7tRKegW9g">
+    <modelElement href="gs-uploading-files.uml#_ZLfuMANCEeexb7tRKegW9g"/>
+    <stereotypes xmi:id="_hx5jUQNCEeexb7tRKegW9g" name="Reference">
+      <modelElement href="gs-uploading-files.uml#_ZLgVQANCEeexb7tRKegW9g"/>
+    </stereotypes>
+    <nameVisual xmi:id="_hx6KYANCEeexb7tRKegW9g" text=""/>
+    <sourceRole xmi:id="_hx6KYQNCEeexb7tRKegW9g" aggregationKind="NONE" name="">
+      <modelElement href="gs-uploading-files.uml#_ZLfuMQNCEeexb7tRKegW9g"/>
+      <visibility xmi:id="_hx6KYgNCEeexb7tRKegW9g" label="+"/>
+      <cardinality xmi:id="_hx6KYwNCEeexb7tRKegW9g" label="1" max="1" min="1"/>
+    </sourceRole>
+    <targetRole xmi:id="_hx6KZANCEeexb7tRKegW9g" aggregationKind="NONE" name="mvc" navigable="true">
+      <modelElement href="gs-uploading-files.uml#_ZKUCcANCEeexb7tRKegW9g"/>
+      <visibility xmi:id="_hx6KZQNCEeexb7tRKegW9g" label="-"/>
+      <cardinality xmi:id="_hx6KZgNCEeexb7tRKegW9g" label="1" max="1" min="1"/>
+    </targetRole>
+  </edges>
+  <nodes xsi:type="com.yattasolutions.uml.diagrams.classifier:ClassifierVisual" xmi:id="_heMkOANCEeexb7tRKegW9g" name="FileSystemStorageService" associationsOut="_heLWEANCEeexb7tRKegW9g" generalizations="_hjukcANCEeexb7tRKegW9g">
+    <modelElement href="gs-uploading-files.uml#_Y7b48ANCEeexb7tRKegW9g"/>
+    <visualProperties xmi:id="_heMkOQNCEeexb7tRKegW9g" position="879.0,767.0" size="-1.0,-1.0"/>
+    <stereotypes xmi:id="_heMkOgNCEeexb7tRKegW9g" name="LegacyStyledElement">
+      <modelElement href="gs-uploading-files.uml#_Y7b48QNCEeexb7tRKegW9g"/>
+    </stereotypes>
+    <stereotypes xmi:id="_heMkOwNCEeexb7tRKegW9g" name="Annotations">
+      <modelElement href="gs-uploading-files.uml#_Y7uz5QNCEeexb7tRKegW9g"/>
+    </stereotypes>
+    <visibility xmi:id="_heMkPANCEeexb7tRKegW9g" label="+"/>
+    <attributes xmi:id="_heMkPQNCEeexb7tRKegW9g" name="rootLocation">
+      <modelElement href="gs-uploading-files.uml#_ZKPJ8ANCEeexb7tRKegW9g"/>
+      <visibility xmi:id="_heMkPgNCEeexb7tRKegW9g" label="-"/>
+      <cardinality xmi:id="_heMkPwNCEeexb7tRKegW9g" label="1" max="1" min="1"/>
+      <type xmi:id="_heMkQANCEeexb7tRKegW9g" name="Path">
+        <modelElement href="gs-uploading-files.uml#_ZIGb8ANCEeexb7tRKegW9g"/>
+      </type>
+    </attributes>
+    <operations xmi:id="_heMkQQNCEeexb7tRKegW9g" name="loadAll">
+      <modelElement href="gs-uploading-files.uml#_Y7lp8ANCEeexb7tRKegW9g"/>
+      <stereotypes xmi:id="_heMkQgNCEeexb7tRKegW9g" name="Generics">
+        <modelElement href="gs-uploading-files.uml#_Y7lp8QNCEeexb7tRKegW9g"/>
+      </stereotypes>
+      <stereotypes xmi:id="_heMkQwNCEeexb7tRKegW9g" name="Annotations">
+        <modelElement href="gs-uploading-files.uml#_Y7lp8gNCEeexb7tRKegW9g"/>
+      </stereotypes>
+      <visibility xmi:id="_heMkRANCEeexb7tRKegW9g" label="+"/>
+      <cardinality xmi:id="_heMkRQNCEeexb7tRKegW9g" label="1" max="1" min="1"/>
+      <outParameters xmi:id="_heMkRgNCEeexb7tRKegW9g">
+        <modelElement href="gs-uploading-files.uml#_ZJ8PAANCEeexb7tRKegW9g"/>
+        <type xmi:id="_heMkRwNCEeexb7tRKegW9g" name="Stream">
+          <modelElement href="gs-uploading-files.uml#_ZII4MANCEeexb7tRKegW9g"/>
+        </type>
+      </outParameters>
+    </operations>
+    <operations xmi:id="_heMkSANCEeexb7tRKegW9g" name="load">
+      <modelElement href="gs-uploading-files.uml#_Y7lp9ANCEeexb7tRKegW9g"/>
+      <stereotypes xmi:id="_heMkSQNCEeexb7tRKegW9g" name="Annotations">
+        <modelElement href="gs-uploading-files.uml#_Y7lp9gNCEeexb7tRKegW9g"/>
+      </stereotypes>
+      <visibility xmi:id="_heMkSgNCEeexb7tRKegW9g" label="+"/>
+      <cardinality xmi:id="_heMkSwNCEeexb7tRKegW9g" label="1" max="1" min="1"/>
+      <outParameters xmi:id="_heMkTANCEeexb7tRKegW9g">
+        <modelElement href="gs-uploading-files.uml#_ZJ8PAQNCEeexb7tRKegW9g"/>
+        <type xmi:id="_heMkTQNCEeexb7tRKegW9g" name="Path">
+          <modelElement href="gs-uploading-files.uml#_ZIGb8ANCEeexb7tRKegW9g"/>
+        </type>
+      </outParameters>
+      <parameters xmi:id="_heMkTgNCEeexb7tRKegW9g" name="filename">
+        <modelElement href="gs-uploading-files.uml#_Y7lp9QNCEeexb7tRKegW9g"/>
+        <cardinality xmi:id="_heMkTwNCEeexb7tRKegW9g" label="1" max="1" min="1"/>
+        <type xmi:id="_heMkUANCEeexb7tRKegW9g" name="String">
+          <modelElement href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+        </type>
+      </parameters>
+    </operations>
+    <operations xmi:id="_heMkUQNCEeexb7tRKegW9g" name="loadAsResource">
+      <modelElement href="gs-uploading-files.uml#_Y7lp-ANCEeexb7tRKegW9g"/>
+      <stereotypes xmi:id="_heMkUgNCEeexb7tRKegW9g" name="Annotations">
+        <modelElement href="gs-uploading-files.uml#_Y7lp-gNCEeexb7tRKegW9g"/>
+      </stereotypes>
+      <visibility xmi:id="_heMkUwNCEeexb7tRKegW9g" label="+"/>
+      <cardinality xmi:id="_heMkVANCEeexb7tRKegW9g" label="1" max="1" min="1"/>
+      <outParameters xmi:id="_heMkVQNCEeexb7tRKegW9g">
+        <modelElement href="gs-uploading-files.uml#_ZJ82EANCEeexb7tRKegW9g"/>
+        <type xmi:id="_heMkVgNCEeexb7tRKegW9g" name="Resource">
+          <modelElement href="gs-uploading-files.uml#_ZHkQcQNCEeexb7tRKegW9g"/>
+        </type>
+      </outParameters>
+      <parameters xmi:id="_heMkVwNCEeexb7tRKegW9g" name="filename">
+        <modelElement href="gs-uploading-files.uml#_Y7lp-QNCEeexb7tRKegW9g"/>
+        <cardinality xmi:id="_heMkWANCEeexb7tRKegW9g" label="1" max="1" min="1"/>
+        <type xmi:id="_heMkWQNCEeexb7tRKegW9g" name="String">
+          <modelElement href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+        </type>
+      </parameters>
+    </operations>
+    <operations xmi:id="_heMkWgNCEeexb7tRKegW9g" name="deleteAll">
+      <modelElement href="gs-uploading-files.uml#_Y7lp_ANCEeexb7tRKegW9g"/>
+      <stereotypes xmi:id="_heMkWwNCEeexb7tRKegW9g" name="Annotations">
+        <modelElement href="gs-uploading-files.uml#_Y7uz4ANCEeexb7tRKegW9g"/>
+      </stereotypes>
+      <visibility xmi:id="_heMkXANCEeexb7tRKegW9g" label="+"/>
+      <cardinality xmi:id="_heMkXQNCEeexb7tRKegW9g" label="1" max="1" min="1"/>
+    </operations>
+    <operations xmi:id="_heMkXgNCEeexb7tRKegW9g" name="init">
+      <modelElement href="gs-uploading-files.uml#_Y7uz4gNCEeexb7tRKegW9g"/>
+      <stereotypes xmi:id="_heMkXwNCEeexb7tRKegW9g" name="Annotations">
+        <modelElement href="gs-uploading-files.uml#_Y7uz4wNCEeexb7tRKegW9g"/>
+      </stereotypes>
+      <visibility xmi:id="_heMkYANCEeexb7tRKegW9g" label="+"/>
+      <cardinality xmi:id="_heMkYQNCEeexb7tRKegW9g" label="1" max="1" min="1"/>
+    </operations>
+    <operations xmi:id="_heMkYgNCEeexb7tRKegW9g" name="FileSystemStorageService">
+      <modelElement href="gs-uploading-files.uml#_ZIig0ANCEeexb7tRKegW9g"/>
+      <keywords xmi:id="_heMkYwNCEeexb7tRKegW9g" keyword="create"/>
+      <stereotypes xmi:id="_heMkZANCEeexb7tRKegW9g" name="Annotations">
+        <modelElement href="gs-uploading-files.uml#_ZIkWAANCEeexb7tRKegW9g"/>
+      </stereotypes>
+      <visibility xmi:id="_heMkZQNCEeexb7tRKegW9g" label="+"/>
+      <cardinality xmi:id="_heMkZgNCEeexb7tRKegW9g" label="1" max="1" min="1"/>
+      <outParameters xmi:id="_heMkZwNCEeexb7tRKegW9g">
+        <modelElement href="gs-uploading-files.uml#_ZIju8ANCEeexb7tRKegW9g"/>
+        <type xmi:id="_heMkaANCEeexb7tRKegW9g" name="FileSystemStorageService">
+          <modelElement href="gs-uploading-files.uml#_Y7b48ANCEeexb7tRKegW9g"/>
+        </type>
+      </outParameters>
+      <parameters xmi:id="_heMkaQNCEeexb7tRKegW9g" name="properties">
+        <modelElement href="gs-uploading-files.uml#_ZIjH4ANCEeexb7tRKegW9g"/>
+        <cardinality xmi:id="_heMkagNCEeexb7tRKegW9g" label="1" max="1" min="1"/>
+        <type xmi:id="_heMkawNCEeexb7tRKegW9g" name="StorageProperties">
+          <modelElement href="gs-uploading-files.uml#_Y8874ANCEeexb7tRKegW9g"/>
+        </type>
+      </parameters>
+    </operations>
+    <operations xmi:id="_heMkbANCEeexb7tRKegW9g" name="store">
+      <modelElement href="gs-uploading-files.uml#_ZJ2IYANCEeexb7tRKegW9g"/>
+      <stereotypes xmi:id="_heMkbQNCEeexb7tRKegW9g" name="Annotations">
+        <modelElement href="gs-uploading-files.uml#_ZJ7A4ANCEeexb7tRKegW9g"/>
+      </stereotypes>
+      <visibility xmi:id="_heMkbgNCEeexb7tRKegW9g" label="+"/>
+      <cardinality xmi:id="_heMkbwNCEeexb7tRKegW9g" label="1" max="1" min="1"/>
+      <parameters xmi:id="_heMkcANCEeexb7tRKegW9g" name="file">
+        <modelElement href="gs-uploading-files.uml#_ZJ2IYQNCEeexb7tRKegW9g"/>
+        <cardinality xmi:id="_heMkcQNCEeexb7tRKegW9g" label="1" max="1" min="1"/>
+        <type xmi:id="_heMkcgNCEeexb7tRKegW9g" name="MultipartFile">
+          <modelElement href="gs-uploading-files.uml#_ZHtaYQNCEeexb7tRKegW9g"/>
+        </type>
+      </parameters>
+    </operations>
+  </nodes>
+  <nodes xsi:type="com.yattasolutions.uml.diagrams.classifier:ClassifierVisual" xmi:id="_hhQfQANCEeexb7tRKegW9g" name="StorageException" subclassedBy="_hiQk0ANCEeexb7tRKegW9g">
+    <modelElement href="gs-uploading-files.uml#_Y8HOYANCEeexb7tRKegW9g"/>
+    <visualProperties xmi:id="_hhRGUANCEeexb7tRKegW9g" position="117.0,1141.0" size="-1.0,-1.0"/>
+    <visibility xmi:id="_hhRGUQNCEeexb7tRKegW9g" label="+"/>
+    <operations xmi:id="_hhRGUgNCEeexb7tRKegW9g" name="StorageException">
+      <modelElement href="gs-uploading-files.uml#_Y8JDkANCEeexb7tRKegW9g"/>
+      <keywords xmi:id="_hhRGUwNCEeexb7tRKegW9g" keyword="create"/>
+      <visibility xmi:id="_hhRGVANCEeexb7tRKegW9g" label="+"/>
+      <cardinality xmi:id="_hhRGVQNCEeexb7tRKegW9g" label="1" max="1" min="1"/>
+      <outParameters xmi:id="_hhRGVgNCEeexb7tRKegW9g">
+        <modelElement href="gs-uploading-files.uml#_Y8JqogNCEeexb7tRKegW9g"/>
+        <type xmi:id="_hhRGVwNCEeexb7tRKegW9g" name="StorageException">
+          <modelElement href="gs-uploading-files.uml#_Y8HOYANCEeexb7tRKegW9g"/>
+        </type>
+      </outParameters>
+      <parameters xmi:id="_hhRGWANCEeexb7tRKegW9g" name="message">
+        <modelElement href="gs-uploading-files.uml#_Y8JDkQNCEeexb7tRKegW9g"/>
+        <cardinality xmi:id="_hhRGWQNCEeexb7tRKegW9g" label="1" max="1" min="1"/>
+        <type xmi:id="_hhRGWgNCEeexb7tRKegW9g" name="String">
+          <modelElement href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+        </type>
+      </parameters>
+    </operations>
+    <operations xmi:id="_hhRGWwNCEeexb7tRKegW9g" name="StorageException">
+      <modelElement href="gs-uploading-files.uml#_ZKBukANCEeexb7tRKegW9g"/>
+      <keywords xmi:id="_hhRGXANCEeexb7tRKegW9g" keyword="create"/>
+      <visibility xmi:id="_hhRGXQNCEeexb7tRKegW9g" label="+"/>
+      <cardinality xmi:id="_hhRGXgNCEeexb7tRKegW9g" label="1" max="1" min="1"/>
+      <outParameters xmi:id="_hhRGXwNCEeexb7tRKegW9g">
+        <modelElement href="gs-uploading-files.uml#_ZKCVoQNCEeexb7tRKegW9g"/>
+        <type xmi:id="_hhRGYANCEeexb7tRKegW9g" name="StorageException">
+          <modelElement href="gs-uploading-files.uml#_Y8HOYANCEeexb7tRKegW9g"/>
+        </type>
+      </outParameters>
+      <parameters xmi:id="_hhRGYQNCEeexb7tRKegW9g" name="message">
+        <modelElement href="gs-uploading-files.uml#_ZKBukQNCEeexb7tRKegW9g"/>
+        <cardinality xmi:id="_hhRtYANCEeexb7tRKegW9g" label="1" max="1" min="1"/>
+        <type xmi:id="_hhRtYQNCEeexb7tRKegW9g" name="String">
+          <modelElement href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+        </type>
+      </parameters>
+      <parameters xmi:id="_hhRtYgNCEeexb7tRKegW9g" name="cause">
+        <modelElement href="gs-uploading-files.uml#_ZKBukgNCEeexb7tRKegW9g"/>
+        <cardinality xmi:id="_hhRtYwNCEeexb7tRKegW9g" label="1" max="1" min="1"/>
+        <type xmi:id="_hhRtZANCEeexb7tRKegW9g" name="Throwable">
+          <modelElement href="gs-uploading-files.uml#_ZKAgcANCEeexb7tRKegW9g"/>
+        </type>
+      </parameters>
+    </operations>
+  </nodes>
+  <nodes xsi:type="com.yattasolutions.uml.diagrams.classifier:ClassifierVisual" xmi:id="_hijfwANCEeexb7tRKegW9g" name="StorageFileNotFoundException" generalizations="_hiQk0ANCEeexb7tRKegW9g">
+    <modelElement href="gs-uploading-files.uml#_Y8PKMANCEeexb7tRKegW9g"/>
+    <visualProperties xmi:id="_hijfwQNCEeexb7tRKegW9g" position="10.0,1258.0" size="-1.0,-1.0"/>
+    <visibility xmi:id="_hijfwgNCEeexb7tRKegW9g" label="+"/>
+    <operations xmi:id="_hijfwwNCEeexb7tRKegW9g" name="StorageFileNotFoundException">
+      <modelElement href="gs-uploading-files.uml#_Y8Q_YANCEeexb7tRKegW9g"/>
+      <keywords xmi:id="_hijfxANCEeexb7tRKegW9g" keyword="create"/>
+      <visibility xmi:id="_hijfxQNCEeexb7tRKegW9g" label="+"/>
+      <cardinality xmi:id="_hijfxgNCEeexb7tRKegW9g" label="1" max="1" min="1"/>
+      <outParameters xmi:id="_hijfxwNCEeexb7tRKegW9g">
+        <modelElement href="gs-uploading-files.uml#_Y8RmcgNCEeexb7tRKegW9g"/>
+        <type xmi:id="_hijfyANCEeexb7tRKegW9g" name="StorageFileNotFoundException">
+          <modelElement href="gs-uploading-files.uml#_Y8PKMANCEeexb7tRKegW9g"/>
+        </type>
+      </outParameters>
+      <parameters xmi:id="_hijfyQNCEeexb7tRKegW9g" name="message">
+        <modelElement href="gs-uploading-files.uml#_Y8Q_YQNCEeexb7tRKegW9g"/>
+        <cardinality xmi:id="_hijfygNCEeexb7tRKegW9g" label="1" max="1" min="1"/>
+        <type xmi:id="_hijfywNCEeexb7tRKegW9g" name="String">
+          <modelElement href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+        </type>
+      </parameters>
+    </operations>
+    <operations xmi:id="_hijfzANCEeexb7tRKegW9g" name="StorageFileNotFoundException">
+      <modelElement href="gs-uploading-files.uml#_ZKC8sANCEeexb7tRKegW9g"/>
+      <keywords xmi:id="_hijfzQNCEeexb7tRKegW9g" keyword="create"/>
+      <visibility xmi:id="_hijfzgNCEeexb7tRKegW9g" label="+"/>
+      <cardinality xmi:id="_hijfzwNCEeexb7tRKegW9g" label="1" max="1" min="1"/>
+      <outParameters xmi:id="_hijf0ANCEeexb7tRKegW9g">
+        <modelElement href="gs-uploading-files.uml#_ZKDjwwNCEeexb7tRKegW9g"/>
+        <type xmi:id="_hijf0QNCEeexb7tRKegW9g" name="StorageFileNotFoundException">
+          <modelElement href="gs-uploading-files.uml#_Y8PKMANCEeexb7tRKegW9g"/>
+        </type>
+      </outParameters>
+      <parameters xmi:id="_hijf0gNCEeexb7tRKegW9g" name="message">
+        <modelElement href="gs-uploading-files.uml#_ZKC8sQNCEeexb7tRKegW9g"/>
+        <cardinality xmi:id="_hijf0wNCEeexb7tRKegW9g" label="1" max="1" min="1"/>
+        <type xmi:id="_hijf1ANCEeexb7tRKegW9g" name="String">
+          <modelElement href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+        </type>
+      </parameters>
+      <parameters xmi:id="_hijf1QNCEeexb7tRKegW9g" name="cause">
+        <modelElement href="gs-uploading-files.uml#_ZKDjwANCEeexb7tRKegW9g"/>
+        <cardinality xmi:id="_hijf1gNCEeexb7tRKegW9g" label="1" max="1" min="1"/>
+        <type xmi:id="_hijf1wNCEeexb7tRKegW9g" name="Throwable">
+          <modelElement href="gs-uploading-files.uml#_ZKAgcANCEeexb7tRKegW9g"/>
+        </type>
+      </parameters>
+    </operations>
+  </nodes>
+  <nodes xsi:type="com.yattasolutions.uml.diagrams.classifier:InterfaceVisual" xmi:id="_hkA4UANCEeexb7tRKegW9g" name="StorageService" associationsIn="_hpNhYANCEeexb7tRKegW9g _htN3oANCEeexb7tRKegW9g _hwvswANCEeexb7tRKegW9g" subclassedBy="_hjukcANCEeexb7tRKegW9g">
+    <modelElement href="gs-uploading-files.uml#_Y8UpwANCEeexb7tRKegW9g"/>
+    <visualProperties xmi:id="_hkA4UQNCEeexb7tRKegW9g" position="1050.0,500.0" size="-1.0,-1.0"/>
+    <visibility xmi:id="_hkA4UgNCEeexb7tRKegW9g" label="+"/>
+    <operations xmi:id="_hkA4UwNCEeexb7tRKegW9g" name="init">
+      <modelElement href="gs-uploading-files.uml#_Y8V34ANCEeexb7tRKegW9g"/>
+      <visibility xmi:id="_hkA4VANCEeexb7tRKegW9g" label="+"/>
+      <cardinality xmi:id="_hkA4VQNCEeexb7tRKegW9g" label="1" max="1" min="1"/>
+    </operations>
+    <operations xmi:id="_hkA4VgNCEeexb7tRKegW9g" name="loadAll">
+      <modelElement href="gs-uploading-files.uml#_Y8XGAANCEeexb7tRKegW9g"/>
+      <stereotypes xmi:id="_hkA4VwNCEeexb7tRKegW9g" name="Generics">
+        <modelElement href="gs-uploading-files.uml#_Y8ZiQANCEeexb7tRKegW9g"/>
+      </stereotypes>
+      <visibility xmi:id="_hkA4WANCEeexb7tRKegW9g" label="+"/>
+      <cardinality xmi:id="_hkA4WQNCEeexb7tRKegW9g" label="1" max="1" min="1"/>
+      <outParameters xmi:id="_hkA4WgNCEeexb7tRKegW9g">
+        <modelElement href="gs-uploading-files.uml#_ZKFY8ANCEeexb7tRKegW9g"/>
+        <type xmi:id="_hkA4WwNCEeexb7tRKegW9g" name="Stream">
+          <modelElement href="gs-uploading-files.uml#_ZII4MANCEeexb7tRKegW9g"/>
+        </type>
+      </outParameters>
+    </operations>
+    <operations xmi:id="_hkA4XANCEeexb7tRKegW9g" name="load">
+      <modelElement href="gs-uploading-files.uml#_Y8awYANCEeexb7tRKegW9g"/>
+      <visibility xmi:id="_hkA4XQNCEeexb7tRKegW9g" label="+"/>
+      <cardinality xmi:id="_hkA4XgNCEeexb7tRKegW9g" label="1" max="1" min="1"/>
+      <outParameters xmi:id="_hkA4XwNCEeexb7tRKegW9g">
+        <modelElement href="gs-uploading-files.uml#_ZKGAAANCEeexb7tRKegW9g"/>
+        <type xmi:id="_hkA4YANCEeexb7tRKegW9g" name="Path">
+          <modelElement href="gs-uploading-files.uml#_ZIGb8ANCEeexb7tRKegW9g"/>
+        </type>
+      </outParameters>
+      <parameters xmi:id="_hkA4YQNCEeexb7tRKegW9g" name="filename">
+        <modelElement href="gs-uploading-files.uml#_Y8awYQNCEeexb7tRKegW9g"/>
+        <cardinality xmi:id="_hkA4YgNCEeexb7tRKegW9g" label="1" max="1" min="1"/>
+        <type xmi:id="_hkA4YwNCEeexb7tRKegW9g" name="String">
+          <modelElement href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+        </type>
+      </parameters>
+    </operations>
+    <operations xmi:id="_hkA4ZANCEeexb7tRKegW9g" name="loadAsResource">
+      <modelElement href="gs-uploading-files.uml#_Y8b-gANCEeexb7tRKegW9g"/>
+      <visibility xmi:id="_hkA4ZQNCEeexb7tRKegW9g" label="+"/>
+      <cardinality xmi:id="_hkBfYANCEeexb7tRKegW9g" label="1" max="1" min="1"/>
+      <outParameters xmi:id="_hkBfYQNCEeexb7tRKegW9g">
+        <modelElement href="gs-uploading-files.uml#_ZKGAAQNCEeexb7tRKegW9g"/>
+        <type xmi:id="_hkBfYgNCEeexb7tRKegW9g" name="Resource">
+          <modelElement href="gs-uploading-files.uml#_ZHkQcQNCEeexb7tRKegW9g"/>
+        </type>
+      </outParameters>
+      <parameters xmi:id="_hkBfYwNCEeexb7tRKegW9g" name="filename">
+        <modelElement href="gs-uploading-files.uml#_Y8b-gQNCEeexb7tRKegW9g"/>
+        <cardinality xmi:id="_hkBfZANCEeexb7tRKegW9g" label="1" max="1" min="1"/>
+        <type xmi:id="_hkBfZQNCEeexb7tRKegW9g" name="String">
+          <modelElement href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+        </type>
+      </parameters>
+    </operations>
+    <operations xmi:id="_hkBfZgNCEeexb7tRKegW9g" name="deleteAll">
+      <modelElement href="gs-uploading-files.uml#_Y8dMoANCEeexb7tRKegW9g"/>
+      <visibility xmi:id="_hkBfZwNCEeexb7tRKegW9g" label="+"/>
+      <cardinality xmi:id="_hkBfaANCEeexb7tRKegW9g" label="1" max="1" min="1"/>
+    </operations>
+    <operations xmi:id="_hkBfaQNCEeexb7tRKegW9g" name="store">
+      <modelElement href="gs-uploading-files.uml#_ZKEx4ANCEeexb7tRKegW9g"/>
+      <visibility xmi:id="_hkBfagNCEeexb7tRKegW9g" label="+"/>
+      <cardinality xmi:id="_hkBfawNCEeexb7tRKegW9g" label="1" max="1" min="1"/>
+      <parameters xmi:id="_hkBfbANCEeexb7tRKegW9g" name="file">
+        <modelElement href="gs-uploading-files.uml#_ZKEx4QNCEeexb7tRKegW9g"/>
+        <cardinality xmi:id="_hkBfbQNCEeexb7tRKegW9g" label="1" max="1" min="1"/>
+        <type xmi:id="_hkBfbgNCEeexb7tRKegW9g" name="MultipartFile">
+          <modelElement href="gs-uploading-files.uml#_ZHtaYQNCEeexb7tRKegW9g"/>
+        </type>
+      </parameters>
+    </operations>
+  </nodes>
+  <nodes xsi:type="com.yattasolutions.uml.diagrams.classifier:ClassifierVisual" xmi:id="_hlffAANCEeexb7tRKegW9g" name="StorageProperties">
+    <modelElement href="gs-uploading-files.uml#_Y8874ANCEeexb7tRKegW9g"/>
+    <visualProperties xmi:id="_hlffAQNCEeexb7tRKegW9g" position="643.0,1415.0" size="-1.0,-1.0"/>
+    <stereotypes xmi:id="_hlgGEANCEeexb7tRKegW9g" name="LegacyStyledElement">
+      <modelElement href="gs-uploading-files.uml#_Y8-KAANCEeexb7tRKegW9g"/>
+    </stereotypes>
+    <stereotypes xmi:id="_hlgGEQNCEeexb7tRKegW9g" name="Annotations">
+      <modelElement href="gs-uploading-files.uml#_Y9JwMANCEeexb7tRKegW9g"/>
+    </stereotypes>
+    <visibility xmi:id="_hlgGEgNCEeexb7tRKegW9g" label="+"/>
+    <attributes xmi:id="_hlgGEwNCEeexb7tRKegW9g" defaultValue="&quot;upload-dir&quot;" name="location">
+      <modelElement href="gs-uploading-files.uml#_ZKV3ogNCEeexb7tRKegW9g"/>
+      <stereotypes xmi:id="_hlgGFANCEeexb7tRKegW9g" name="StyledElement">
+        <modelElement href="gs-uploading-files.uml#_ZKXFwANCEeexb7tRKegW9g"/>
+      </stereotypes>
+      <visibility xmi:id="_hlgGFQNCEeexb7tRKegW9g" label="+"/>
+      <cardinality xmi:id="_hlgGFgNCEeexb7tRKegW9g" label="1" max="1" min="1"/>
+      <type xmi:id="_hlgGFwNCEeexb7tRKegW9g" name="String">
+        <modelElement href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+      </type>
+    </attributes>
+  </nodes>
+  <nodes xsi:type="com.yattasolutions.uml.diagrams.classifier:ClassifierVisual" xmi:id="_hm1i0ANCEeexb7tRKegW9g" name="Application">
+    <modelElement href="gs-uploading-files.uml#_Y6e2sANCEeexb7tRKegW9g"/>
+    <visualProperties xmi:id="_hm1i0QNCEeexb7tRKegW9g" position="14.0,1414.0" size="-1.0,-1.0"/>
+    <stereotypes xmi:id="_hm1i0gNCEeexb7tRKegW9g" name="LegacyStyledElement">
+      <modelElement href="gs-uploading-files.uml#_Y6onsANCEeexb7tRKegW9g"/>
+    </stereotypes>
+    <stereotypes xmi:id="_hm1i0wNCEeexb7tRKegW9g" name="Annotations">
+      <modelElement href="gs-uploading-files.uml#_Y634QANCEeexb7tRKegW9g"/>
+    </stereotypes>
+    <visibility xmi:id="_hm1i1ANCEeexb7tRKegW9g" label="+"/>
+    <operations xmi:id="_hm1i1QNCEeexb7tRKegW9g" name="main" staticOperation="true">
+      <modelElement href="gs-uploading-files.uml#_Y6uuUANCEeexb7tRKegW9g"/>
+      <stereotypes xmi:id="_hm1i1gNCEeexb7tRKegW9g" name="StyledElement">
+        <modelElement href="gs-uploading-files.uml#_Y6zm0ANCEeexb7tRKegW9g"/>
+      </stereotypes>
+      <visibility xmi:id="_hm1i1wNCEeexb7tRKegW9g" label="+"/>
+      <cardinality xmi:id="_hm1i2ANCEeexb7tRKegW9g" label="1" max="1" min="1"/>
+      <parameters xmi:id="_hm1i2QNCEeexb7tRKegW9g" name="args">
+        <modelElement href="gs-uploading-files.uml#_Y6vVYANCEeexb7tRKegW9g"/>
+        <cardinality xmi:id="_hm1i2gNCEeexb7tRKegW9g" label="1..*" max="-1" min="1"/>
+        <type xmi:id="_hm1i2wNCEeexb7tRKegW9g" name="String">
+          <modelElement href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+        </type>
+      </parameters>
+    </operations>
+    <operations xmi:id="_hm1i3ANCEeexb7tRKegW9g" name="init">
+      <modelElement href="gs-uploading-files.uml#_ZHc7sANCEeexb7tRKegW9g"/>
+      <stereotypes xmi:id="_hm1i3QNCEeexb7tRKegW9g" name="Annotations">
+        <modelElement href="gs-uploading-files.uml#_ZHf_AANCEeexb7tRKegW9g"/>
+      </stereotypes>
+      <visibility xmi:id="_hm1i3gNCEeexb7tRKegW9g" label="~"/>
+      <cardinality xmi:id="_hm1i3wNCEeexb7tRKegW9g" label="1" max="1" min="1"/>
+      <outParameters xmi:id="_hm1i4ANCEeexb7tRKegW9g">
+        <modelElement href="gs-uploading-files.uml#_ZJT84ANCEeexb7tRKegW9g"/>
+        <type xmi:id="_hm1i4QNCEeexb7tRKegW9g" name="CommandLineRunner">
+          <modelElement href="gs-uploading-files.uml#_ZHSjoANCEeexb7tRKegW9g"/>
+        </type>
+      </outParameters>
+      <parameters xmi:id="_hm1i4gNCEeexb7tRKegW9g" name="storageService">
+        <modelElement href="gs-uploading-files.uml#_ZHc7sQNCEeexb7tRKegW9g"/>
+        <cardinality xmi:id="_hm1i4wNCEeexb7tRKegW9g" label="1" max="1" min="1"/>
+        <type xmi:id="_hm1i5ANCEeexb7tRKegW9g" name="StorageService">
+          <modelElement href="gs-uploading-files.uml#_Y8UpwANCEeexb7tRKegW9g"/>
+        </type>
+      </parameters>
+    </operations>
+  </nodes>
+  <nodes xsi:type="com.yattasolutions.uml.diagrams.classifier:ClassifierVisual" xmi:id="_hq_DAANCEeexb7tRKegW9g" name="FileUploadController" associationsOut="_hpNhYANCEeexb7tRKegW9g">
+    <modelElement href="gs-uploading-files.uml#_Y68JsANCEeexb7tRKegW9g"/>
+    <visualProperties xmi:id="_hq_DAQNCEeexb7tRKegW9g" position="13.0,514.0" size="-1.0,-1.0"/>
+    <stereotypes xmi:id="_hq_DAgNCEeexb7tRKegW9g" name="LegacyStyledElement">
+      <modelElement href="gs-uploading-files.uml#_Y6_NAANCEeexb7tRKegW9g"/>
+    </stereotypes>
+    <stereotypes xmi:id="_hq_DAwNCEeexb7tRKegW9g" name="Annotations">
+      <modelElement href="gs-uploading-files.uml#_Y7SH8ANCEeexb7tRKegW9g"/>
+    </stereotypes>
+    <visibility xmi:id="_hq_DBANCEeexb7tRKegW9g" label="+"/>
+    <attributes xmi:id="_hq_DBQNCEeexb7tRKegW9g" name="storageService">
+      <modelElement href="gs-uploading-files.uml#_ZKMGoANCEeexb7tRKegW9g"/>
+      <visibility xmi:id="_hq_DBgNCEeexb7tRKegW9g" label="-"/>
+      <cardinality xmi:id="_hq_DBwNCEeexb7tRKegW9g" label="1" max="1" min="1"/>
+      <type xmi:id="_hq_DCANCEeexb7tRKegW9g" name="StorageService">
+        <modelElement href="gs-uploading-files.uml#_Y8UpwANCEeexb7tRKegW9g"/>
+      </type>
+    </attributes>
+    <operations xmi:id="_hq_DCQNCEeexb7tRKegW9g" name="serveFile">
+      <modelElement href="gs-uploading-files.uml#_Y6_NAQNCEeexb7tRKegW9g"/>
+      <stereotypes xmi:id="_hq_DCgNCEeexb7tRKegW9g" name="Generics">
+        <modelElement href="gs-uploading-files.uml#_Y6_NAwNCEeexb7tRKegW9g"/>
+      </stereotypes>
+      <stereotypes xmi:id="_hq_DCwNCEeexb7tRKegW9g" name="Annotations">
+        <modelElement href="gs-uploading-files.uml#_Y7I-AANCEeexb7tRKegW9g"/>
+      </stereotypes>
+      <visibility xmi:id="_hq_DDANCEeexb7tRKegW9g" label="+"/>
+      <cardinality xmi:id="_hq_DDQNCEeexb7tRKegW9g" label="1" max="1" min="1"/>
+      <outParameters xmi:id="_hq_DDgNCEeexb7tRKegW9g">
+        <modelElement href="gs-uploading-files.uml#_ZJbRoQNCEeexb7tRKegW9g"/>
+        <type xmi:id="_hq_DDwNCEeexb7tRKegW9g" name="ResponseEntity">
+          <modelElement href="gs-uploading-files.uml#_ZHn60ANCEeexb7tRKegW9g"/>
+        </type>
+      </outParameters>
+      <parameters xmi:id="_hq_DEANCEeexb7tRKegW9g" name="filename">
+        <modelElement href="gs-uploading-files.uml#_Y6_NAgNCEeexb7tRKegW9g"/>
+        <cardinality xmi:id="_hq_DEQNCEeexb7tRKegW9g" label="1" max="1" min="1"/>
+        <type xmi:id="_hq_DEgNCEeexb7tRKegW9g" name="String">
+          <modelElement href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+        </type>
+      </parameters>
+    </operations>
+    <operations xmi:id="_hq_DEwNCEeexb7tRKegW9g" name="FileUploadController">
+      <modelElement href="gs-uploading-files.uml#_ZH2kUANCEeexb7tRKegW9g"/>
+      <keywords xmi:id="_hq_DFANCEeexb7tRKegW9g" keyword="create"/>
+      <stereotypes xmi:id="_hq_DFQNCEeexb7tRKegW9g" name="Annotations">
+        <modelElement href="gs-uploading-files.uml#_ZH3ycANCEeexb7tRKegW9g"/>
+      </stereotypes>
+      <visibility xmi:id="_hq_DFgNCEeexb7tRKegW9g" label="+"/>
+      <cardinality xmi:id="_hq_DFwNCEeexb7tRKegW9g" label="1" max="1" min="1"/>
+      <outParameters xmi:id="_hq_DGANCEeexb7tRKegW9g">
+        <modelElement href="gs-uploading-files.uml#_ZH3LYgNCEeexb7tRKegW9g"/>
+        <type xmi:id="_hq_DGQNCEeexb7tRKegW9g" name="FileUploadController">
+          <modelElement href="gs-uploading-files.uml#_Y68JsANCEeexb7tRKegW9g"/>
+        </type>
+      </outParameters>
+      <parameters xmi:id="_hq_DGgNCEeexb7tRKegW9g" name="storageService">
+        <modelElement href="gs-uploading-files.uml#_ZH2kUQNCEeexb7tRKegW9g"/>
+        <cardinality xmi:id="_hq_DGwNCEeexb7tRKegW9g" label="1" max="1" min="1"/>
+        <type xmi:id="_hq_DHANCEeexb7tRKegW9g" name="StorageService">
+          <modelElement href="gs-uploading-files.uml#_Y8UpwANCEeexb7tRKegW9g"/>
+        </type>
+      </parameters>
+    </operations>
+    <operations xmi:id="_hq_DHQNCEeexb7tRKegW9g" name="handleStorageFileNotFound">
+      <modelElement href="gs-uploading-files.uml#_ZH5noANCEeexb7tRKegW9g"/>
+      <stereotypes xmi:id="_hq_DHgNCEeexb7tRKegW9g" name="Annotations">
+        <modelElement href="gs-uploading-files.uml#_ZH61wANCEeexb7tRKegW9g"/>
+      </stereotypes>
+      <visibility xmi:id="_hq_DHwNCEeexb7tRKegW9g" label="+"/>
+      <cardinality xmi:id="_hq_DIANCEeexb7tRKegW9g" label="1" max="1" min="1"/>
+      <outParameters xmi:id="_hq_DIQNCEeexb7tRKegW9g">
+        <modelElement href="gs-uploading-files.uml#_ZJpUEANCEeexb7tRKegW9g"/>
+        <type xmi:id="_hq_DIgNCEeexb7tRKegW9g" name="ResponseEntity">
+          <modelElement href="gs-uploading-files.uml#_ZHn60ANCEeexb7tRKegW9g"/>
+        </type>
+      </outParameters>
+      <parameters xmi:id="_hq_DIwNCEeexb7tRKegW9g" name="exc">
+        <modelElement href="gs-uploading-files.uml#_ZH5noQNCEeexb7tRKegW9g"/>
+        <cardinality xmi:id="_hq_DJANCEeexb7tRKegW9g" label="1" max="1" min="1"/>
+        <type xmi:id="_hq_DJQNCEeexb7tRKegW9g" name="StorageFileNotFoundException">
+          <modelElement href="gs-uploading-files.uml#_Y8PKMANCEeexb7tRKegW9g"/>
+        </type>
+      </parameters>
+    </operations>
+    <operations xmi:id="_hq_DJgNCEeexb7tRKegW9g" name="listUploadedFiles">
+      <modelElement href="gs-uploading-files.uml#_ZJVLAANCEeexb7tRKegW9g"/>
+      <stereotypes xmi:id="_hq_DJwNCEeexb7tRKegW9g" name="Annotations">
+        <modelElement href="gs-uploading-files.uml#_ZJaqkANCEeexb7tRKegW9g"/>
+      </stereotypes>
+      <visibility xmi:id="_hq_DKANCEeexb7tRKegW9g" label="+"/>
+      <cardinality xmi:id="_hq_DKQNCEeexb7tRKegW9g" label="1" max="1" min="1"/>
+      <outParameters xmi:id="_hq_DKgNCEeexb7tRKegW9g">
+        <modelElement href="gs-uploading-files.uml#_ZJVLAgNCEeexb7tRKegW9g"/>
+        <type xmi:id="_hq_DKwNCEeexb7tRKegW9g" name="String">
+          <modelElement href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+        </type>
+      </outParameters>
+      <parameters xmi:id="_hq_DLANCEeexb7tRKegW9g" name="model">
+        <modelElement href="gs-uploading-files.uml#_ZJVLAQNCEeexb7tRKegW9g"/>
+        <cardinality xmi:id="_hq_DLQNCEeexb7tRKegW9g" label="1" max="1" min="1"/>
+        <type xmi:id="_hq_DLgNCEeexb7tRKegW9g" name="Model">
+          <modelElement href="gs-uploading-files.uml#_ZHrlMANCEeexb7tRKegW9g"/>
+        </type>
+      </parameters>
+    </operations>
+    <operations xmi:id="_hq_DLwNCEeexb7tRKegW9g" name="handleFileUpload">
+      <modelElement href="gs-uploading-files.uml#_ZJb4sANCEeexb7tRKegW9g"/>
+      <stereotypes xmi:id="_hq_DMANCEeexb7tRKegW9g" name="Annotations">
+        <modelElement href="gs-uploading-files.uml#_ZJoF8QNCEeexb7tRKegW9g"/>
+      </stereotypes>
+      <visibility xmi:id="_hq_DMQNCEeexb7tRKegW9g" label="+"/>
+      <cardinality xmi:id="_hq_DMgNCEeexb7tRKegW9g" label="1" max="1" min="1"/>
+      <outParameters xmi:id="_hq_DMwNCEeexb7tRKegW9g">
+        <modelElement href="gs-uploading-files.uml#_ZJm30ANCEeexb7tRKegW9g"/>
+        <type xmi:id="_hq_DNANCEeexb7tRKegW9g" name="String">
+          <modelElement href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+        </type>
+      </outParameters>
+      <parameters xmi:id="_hq_DNQNCEeexb7tRKegW9g" name="file">
+        <modelElement href="gs-uploading-files.uml#_ZJcfwANCEeexb7tRKegW9g"/>
+        <cardinality xmi:id="_hq_DNgNCEeexb7tRKegW9g" label="1" max="1" min="1"/>
+        <type xmi:id="_hq_DNwNCEeexb7tRKegW9g" name="MultipartFile">
+          <modelElement href="gs-uploading-files.uml#_ZHtaYQNCEeexb7tRKegW9g"/>
+        </type>
+      </parameters>
+      <parameters xmi:id="_hq_DOANCEeexb7tRKegW9g" name="redirectAttributes">
+        <modelElement href="gs-uploading-files.uml#_ZJcfwQNCEeexb7tRKegW9g"/>
+        <cardinality xmi:id="_hq_DOQNCEeexb7tRKegW9g" label="1" max="1" min="1"/>
+        <type xmi:id="_hq_DOgNCEeexb7tRKegW9g" name="RedirectAttributes">
+          <modelElement href="gs-uploading-files.uml#_ZHwdsQNCEeexb7tRKegW9g"/>
+        </type>
+      </parameters>
+    </operations>
+  </nodes>
+  <nodes xsi:type="com.yattasolutions.uml.diagrams.classifier:ClassifierVisual" xmi:id="_hvTiUANCEeexb7tRKegW9g" name="FileUploadIntegrationTests" associationsOut="_htN3oANCEeexb7tRKegW9g _hux94ANCEeexb7tRKegW9g">
+    <modelElement href="gs-uploading-files.uml#_Y8gP8ANCEeexb7tRKegW9g"/>
+    <visualProperties xmi:id="_hvTiUQNCEeexb7tRKegW9g" position="1753.0,524.0" size="-1.0,-1.0"/>
+    <stereotypes xmi:id="_hvTiUgNCEeexb7tRKegW9g" name="LegacyStyledElement">
+      <modelElement href="gs-uploading-files.uml#_Y8iFIANCEeexb7tRKegW9g"/>
+    </stereotypes>
+    <stereotypes xmi:id="_hvTiUwNCEeexb7tRKegW9g" name="Annotations">
+      <modelElement href="gs-uploading-files.uml#_Y8nksANCEeexb7tRKegW9g"/>
+    </stereotypes>
+    <visibility xmi:id="_hvTiVANCEeexb7tRKegW9g" label="+"/>
+    <attributes xmi:id="_hvTiVQNCEeexb7tRKegW9g" name="restTemplate">
+      <modelElement href="gs-uploading-files.uml#_ZKQYEANCEeexb7tRKegW9g"/>
+      <stereotypes xmi:id="_hvTiVgNCEeexb7tRKegW9g" name="Annotations">
+        <modelElement href="gs-uploading-files.uml#_ZKRmMANCEeexb7tRKegW9g"/>
+      </stereotypes>
+      <visibility xmi:id="_hvTiVwNCEeexb7tRKegW9g" label="-"/>
+      <cardinality xmi:id="_hvTiWANCEeexb7tRKegW9g" label="1" max="1" min="1"/>
+      <type xmi:id="_hvTiWQNCEeexb7tRKegW9g" name="TestRestTemplate">
+        <modelElement href="gs-uploading-files.uml#_ZIxxYQNCEeexb7tRKegW9g"/>
+      </type>
+    </attributes>
+    <attributes xmi:id="_hvTiWgNCEeexb7tRKegW9g" name="storageService">
+      <modelElement href="gs-uploading-files.uml#_ZKRmMgNCEeexb7tRKegW9g"/>
+      <stereotypes xmi:id="_hvTiWwNCEeexb7tRKegW9g" name="Annotations">
+        <modelElement href="gs-uploading-files.uml#_ZKSNQANCEeexb7tRKegW9g"/>
+      </stereotypes>
+      <visibility xmi:id="_hvTiXANCEeexb7tRKegW9g" label="-"/>
+      <cardinality xmi:id="_hvTiXQNCEeexb7tRKegW9g" label="1" max="1" min="1"/>
+      <type xmi:id="_hvTiXgNCEeexb7tRKegW9g" name="StorageService">
+        <modelElement href="gs-uploading-files.uml#_Y8UpwANCEeexb7tRKegW9g"/>
+      </type>
+    </attributes>
+    <attributes xmi:id="_hvTiXwNCEeexb7tRKegW9g" name="port">
+      <modelElement href="gs-uploading-files.uml#_ZKS0UQNCEeexb7tRKegW9g"/>
+      <stereotypes xmi:id="_hvTiYANCEeexb7tRKegW9g" name="Annotations">
+        <modelElement href="gs-uploading-files.uml#_ZKTbYANCEeexb7tRKegW9g"/>
+      </stereotypes>
+      <visibility xmi:id="_hvTiYQNCEeexb7tRKegW9g" label="-"/>
+      <cardinality xmi:id="_hvTiYgNCEeexb7tRKegW9g" label="1" max="1" min="1"/>
+      <type xmi:id="_hvTiYwNCEeexb7tRKegW9g" name="int">
+        <modelElement href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#int"/>
+      </type>
+    </attributes>
+    <operations xmi:id="_hvTiZANCEeexb7tRKegW9g" name="shouldUploadFile">
+      <modelElement href="gs-uploading-files.uml#_Y8j6UANCEeexb7tRKegW9g"/>
+      <stereotypes xmi:id="_hvTiZQNCEeexb7tRKegW9g" name="Annotations">
+        <modelElement href="gs-uploading-files.uml#_Y8khYANCEeexb7tRKegW9g"/>
+      </stereotypes>
+      <visibility xmi:id="_hvTiZgNCEeexb7tRKegW9g" label="+"/>
+      <cardinality xmi:id="_hvTiZwNCEeexb7tRKegW9g" label="1" max="1" min="1"/>
+    </operations>
+    <operations xmi:id="_hvTiaANCEeexb7tRKegW9g" name="shouldDownloadFile">
+      <modelElement href="gs-uploading-files.uml#_Y8lIcANCEeexb7tRKegW9g"/>
+      <stereotypes xmi:id="_hvTiaQNCEeexb7tRKegW9g" name="Annotations">
+        <modelElement href="gs-uploading-files.uml#_Y8mWkANCEeexb7tRKegW9g"/>
+      </stereotypes>
+      <visibility xmi:id="_hvTiagNCEeexb7tRKegW9g" label="+"/>
+      <cardinality xmi:id="_hvTiawNCEeexb7tRKegW9g" label="1" max="1" min="1"/>
+    </operations>
+  </nodes>
+  <nodes xsi:type="com.yattasolutions.uml.diagrams.classifier:ClassifierVisual" xmi:id="_hzLVsANCEeexb7tRKegW9g" name="FileUploadTests" associationsOut="_hwvswANCEeexb7tRKegW9g _hx5jUANCEeexb7tRKegW9g">
+    <modelElement href="gs-uploading-files.uml#_Y8uSYANCEeexb7tRKegW9g"/>
+    <visualProperties xmi:id="_hzLVsQNCEeexb7tRKegW9g" position="1094.0,31.0" size="-1.0,-1.0"/>
+    <stereotypes xmi:id="_hzLVsgNCEeexb7tRKegW9g" name="LegacyStyledElement">
+      <modelElement href="gs-uploading-files.uml#_Y8wHkANCEeexb7tRKegW9g"/>
+    </stereotypes>
+    <stereotypes xmi:id="_hzLVswNCEeexb7tRKegW9g" name="Annotations">
+      <modelElement href="gs-uploading-files.uml#_Y821QANCEeexb7tRKegW9g"/>
+    </stereotypes>
+    <visibility xmi:id="_hzLVtANCEeexb7tRKegW9g" label="+"/>
+    <attributes xmi:id="_hzL8wANCEeexb7tRKegW9g" name="mvc">
+      <modelElement href="gs-uploading-files.uml#_ZKUCcANCEeexb7tRKegW9g"/>
+      <stereotypes xmi:id="_hzL8wQNCEeexb7tRKegW9g" name="Annotations">
+        <modelElement href="gs-uploading-files.uml#_ZKUpgANCEeexb7tRKegW9g"/>
+      </stereotypes>
+      <visibility xmi:id="_hzL8wgNCEeexb7tRKegW9g" label="-"/>
+      <cardinality xmi:id="_hzL8wwNCEeexb7tRKegW9g" label="1" max="1" min="1"/>
+      <type xmi:id="_hzL8xANCEeexb7tRKegW9g" name="MockMvc">
+        <modelElement href="gs-uploading-files.uml#_ZJIWsANCEeexb7tRKegW9g"/>
+      </type>
+    </attributes>
+    <attributes xmi:id="_hzL8xQNCEeexb7tRKegW9g" name="storageService">
+      <modelElement href="gs-uploading-files.uml#_ZKVQkANCEeexb7tRKegW9g"/>
+      <stereotypes xmi:id="_hzL8xgNCEeexb7tRKegW9g" name="Annotations">
+        <modelElement href="gs-uploading-files.uml#_ZKV3oANCEeexb7tRKegW9g"/>
+      </stereotypes>
+      <visibility xmi:id="_hzL8xwNCEeexb7tRKegW9g" label="-"/>
+      <cardinality xmi:id="_hzL8yANCEeexb7tRKegW9g" label="1" max="1" min="1"/>
+      <type xmi:id="_hzL8yQNCEeexb7tRKegW9g" name="StorageService">
+        <modelElement href="gs-uploading-files.uml#_Y8UpwANCEeexb7tRKegW9g"/>
+      </type>
+    </attributes>
+    <operations xmi:id="_hzL8ygNCEeexb7tRKegW9g" name="shouldListAllFiles">
+      <modelElement href="gs-uploading-files.uml#_Y8xVsANCEeexb7tRKegW9g"/>
+      <stereotypes xmi:id="_hzL8ywNCEeexb7tRKegW9g" name="Annotations">
+        <modelElement href="gs-uploading-files.uml#_Y8x8wANCEeexb7tRKegW9g"/>
+      </stereotypes>
+      <visibility xmi:id="_hzL8zANCEeexb7tRKegW9g" label="+"/>
+      <cardinality xmi:id="_hzL8zQNCEeexb7tRKegW9g" label="1" max="1" min="1"/>
+    </operations>
+    <operations xmi:id="_hzL8zgNCEeexb7tRKegW9g" name="shouldSaveUploadedFile">
+      <modelElement href="gs-uploading-files.uml#_Y8zK4ANCEeexb7tRKegW9g"/>
+      <stereotypes xmi:id="_hzL8zwNCEeexb7tRKegW9g" name="Annotations">
+        <modelElement href="gs-uploading-files.uml#_Y8zx8ANCEeexb7tRKegW9g"/>
+      </stereotypes>
+      <visibility xmi:id="_hzL80ANCEeexb7tRKegW9g" label="+"/>
+      <cardinality xmi:id="_hzL80QNCEeexb7tRKegW9g" label="1" max="1" min="1"/>
+    </operations>
+    <operations xmi:id="_hzL80gNCEeexb7tRKegW9g" name="should404WhenMissingFile">
+      <modelElement href="gs-uploading-files.uml#_Y81AEANCEeexb7tRKegW9g"/>
+      <stereotypes xmi:id="_hzL80wNCEeexb7tRKegW9g" name="Annotations">
+        <modelElement href="gs-uploading-files.uml#_Y81nIANCEeexb7tRKegW9g"/>
+      </stereotypes>
+      <visibility xmi:id="_hzL81ANCEeexb7tRKegW9g" label="+"/>
+      <cardinality xmi:id="_hzL81QNCEeexb7tRKegW9g" label="1" max="1" min="1"/>
+    </operations>
+  </nodes>
+</com.yattasolutions.uml.diagrams.classifier:ClassDiagram>
