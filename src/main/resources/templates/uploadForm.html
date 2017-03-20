@@ -2,23 +2,52 @@
 <body>
 
 	<div th:if="${message}">
-		<h2 th:text="${message}"/>
+		<h2 th:text="${message}" />
 	</div>
 
 	<div>
 		<form method="POST" enctype="multipart/form-data" action="/">
 			<table>
-				<tr><td>File to upload:</td><td><input type="file" name="file" /></td></tr>
-				<tr><td></td><td><input type="submit" value="Upload" /></td></tr>
+				<tr>
+					<td>File to upload:</td>
+					<td><input type="file" name="file" /></td>
+				</tr>
+				<tr>
+					<td></td>
+					<td><input type="submit" value="Upload" /></td>
+				</tr>
 			</table>
 		</form>
 	</div>
-
 	<div>
 		<ul>
-			<li th:each="file : ${files}">
-				<a th:href="${file}" th:text="${file}" />
-			</li>
+			<li th:each="file : ${driveAPISearchData}"><a th:href="${file}"
+				th:text="${file}"></a></li>
+		</ul>
+
+		<table >
+			<thead>
+				<tr>
+					<th>Tên file</th>
+					<th>ID</th>
+					<th>Loại</th>
+				</tr>
+			</thead>
+			<tbody>
+				<tr th:each="file : $${driveAPISearchData}"
+					style="margin: auto auto; border: 1px solid #000; background: #f3f3f3">
+					<td class="fileName" width="10%">file.getName()</td>
+					<td class="fileID" width="10%">file.getId()</td>
+					<td class="fileMimeType" width="10%">file.getMimeType()</td>
+					<td class="" width="7%"><button onclick="">Download</button></td>
+				</tr>
+			</tbody>
+		</table>
+	</div>
+	<div>
+		<ul>
+			<li th:each="file : ${files}"><a th:href="${file}"
+				th:text="${file}"></a></li>
 		</ul>
 	</div>
 

@@ -2,7 +2,7 @@ package hello.storage;
 
 import org.springframework.boot.context.properties.ConfigurationProperties;
 
-@ConfigurationProperties("storage")
+@ConfigurationProperties("phituocstorage")
 public class StorageProperties {
 
     /**

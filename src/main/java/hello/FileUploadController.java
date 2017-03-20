@@ -3,10 +3,13 @@ package hello;
 import hello.storage.StorageFileNotFoundException;
 import hello.storage.StorageService;
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.beans.factory.annotation.Required;
+import org.springframework.boot.autoconfigure.condition.ConditionalOnResource;
 import org.springframework.core.io.Resource;
 import org.springframework.http.HttpHeaders;
 import org.springframework.http.ResponseEntity;
 import org.springframework.stereotype.Controller;
+import org.springframework.stereotype.Service;
 import org.springframework.ui.Model;
 import org.springframework.web.bind.annotation.*;
 import org.springframework.web.multipart.MultipartFile;
@@ -22,7 +25,8 @@ public class FileUploadController {
     private final StorageService storageService;
 
     @Autowired
-    public FileUploadController(StorageService storageService) {
+    
+    public FileUploadController( StorageService storageService) {
         this.storageService = storageService;
     }
 
@@ -50,7 +54,11 @@ public class FileUploadController {
                 .header(HttpHeaders.CONTENT_DISPOSITION, "attachment; filename=\""+file.getFilename()+"\"")
                 .body(file);
     }
-
+    @GetMapping("/Search")
+    public String handleFileSearch(@RequestParam("query") String query, Model model){
+    	model.addAttribute("driveAPISearchData", storageService.driveAPISearch(query));    	
+    	return "uploadForm";
+    }
     @PostMapping("/")
     public String handleFileUpload(@RequestParam("file") MultipartFile file,
                                    RedirectAttributes redirectAttributes) {

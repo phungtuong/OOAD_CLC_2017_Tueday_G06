@@ -1,26 +1,30 @@
 package hello.storage;
 
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.beans.factory.annotation.Qualifier;
+import org.springframework.context.annotation.Primary;
 import org.springframework.core.io.Resource;
 import org.springframework.core.io.UrlResource;
 import org.springframework.stereotype.Service;
 import org.springframework.util.FileSystemUtils;
 import org.springframework.web.multipart.MultipartFile;
 
+import com.google.api.services.drive.model.File;
+
 import java.io.IOException;
 import java.net.MalformedURLException;
 import java.nio.file.Files;
 import java.nio.file.Path;
 import java.nio.file.Paths;
+import java.util.List;
 import java.util.stream.Stream;
 
-
-public class FileSystemStorageService implements StorageService {
+public class EFileSystemStorageService implements StorageService {
 
     private final Path rootLocation;
 
     @Autowired
-    public FileSystemStorageService(StorageProperties properties) {
+    public EFileSystemStorageService(StorageProperties properties) {
         this.rootLocation = Paths.get(properties.getLocation());
     }
 
@@ -69,13 +73,24 @@ public class FileSystemStorageService implements StorageService {
             throw new StorageFileNotFoundException("Could not read file: " + filename, e);
         }
     }
-
     @Override
     public void deleteAll() {
         FileSystemUtils.deleteRecursively(rootLocation.toFile());
     }
 
     @Override
+	public List<File> driveAPISearch(String query) {
+		// TODO Auto-generated method stub
+		try {
+			return DriveService.Search(DriveService.getDriveService(), query);
+		} catch (IOException e) {
+			// TODO Auto-generated catch block
+			e.printStackTrace();
+		}
+		return null;
+	}
+
+	@Override
     public void init() {
         try {
             Files.createDirectory(rootLocation);

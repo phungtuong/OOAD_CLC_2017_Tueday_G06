@@ -10,6 +10,7 @@ import java.net.MalformedURLException;
 import java.nio.file.Files;
 import java.nio.file.Path;
 import java.nio.file.Paths;
+import java.util.List;
 import java.util.stream.Stream;
 
 import javax.servlet.annotation.MultipartConfig;
@@ -22,7 +23,7 @@ import org.springframework.stereotype.Service;
 import org.springframework.util.FileSystemUtils;
 import org.springframework.web.multipart.MultipartFile;
 
-@Service
+@Service("DriveStorage")
 @MultipartConfig(fileSizeThreshold=1024*1024*10, 	// 10 MB 
 maxFileSize=1024*1024*50,      	// 50 MB
 maxRequestSize=1024*1024*100)   	// 100 MB
@@ -34,27 +35,26 @@ public class DriveSystemStorageService implements StorageService{
 	    public DriveSystemStorageService(StorageProperties properties) {
 	        this.rootLocation = Paths.get(properties.getLocation());
 	    }
-		private static String extractFileName(MultipartFile part) {
-			String contentDisp = ((Part) part).getHeader("content-disposition");
-			String[] items = contentDisp.split(";");
-			for (String s : items) {
-				if (s.trim().startsWith("filename")) {
-					String clientFileName = s.substring(s.indexOf("=") + 2, s.length() - 1);
-					clientFileName = clientFileName.replace("\\", "/");
-					return clientFileName;
-				}
+		@Override
+		public List<com.google.api.services.drive.model.File> driveAPISearch(String query) {
+			// TODO Auto-generated method stub
+			try {
+				return DriveService.Search(DriveService.getDriveService(), query);
+			} catch (IOException e) {
+				// TODO Auto-generated catch block
+				e.printStackTrace();
 			}
 			return null;
-
 		}
+		
 	    @Override
 	    public void store(MultipartFile file) {
 	        try {
 	            if (file.isEmpty()) {
 	                throw new StorageException("Failed to store empty file " + file.getOriginalFilename());
 	            }
+	            File tmpFile = null;
 	    		try{	    			
-	    			Files.copy(file.getInputStream(), this.rootLocation.resolve(file.getOriginalFilename()));
 	    			String fileName = file.getOriginalFilename();
 	    			// gets absolute path of the web application
 	    			String appPath = new File(this.rootLocation.toString()).getAbsolutePath();
@@ -62,7 +62,8 @@ public class DriveSystemStorageService implements StorageService{
 	    			String savePath = appPath;
 
 					String fullPathFile = savePath + File.separator + fileName;
-					out = new FileOutputStream(new File(fullPathFile));
+					tmpFile = new  File(fullPathFile);
+					out = new FileOutputStream(tmpFile);
 					
 					filecontent = file.getInputStream();
 					int read = 0;
@@ -77,6 +78,7 @@ public class DriveSystemStorageService implements StorageService{
 	    			e.printStackTrace();
 	    		}
 	    		finally {
+	    			tmpFile.delete();
 	    			out.close();
 	    			filecontent.close();
 	    		}
@@ -97,7 +99,7 @@ public class DriveSystemStorageService implements StorageService{
 	        }
 
 	    }
-
+	    //search file
 	    @Override
 	    public Path load(String filename) {
 	        return rootLocation.resolve(filename);
