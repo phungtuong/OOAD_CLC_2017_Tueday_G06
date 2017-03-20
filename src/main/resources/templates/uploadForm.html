@@ -20,12 +20,20 @@
 		</form>
 	</div>
 	<div>
+	<form method="GET"  action="/search">
+			<table>
+				<tr><td>Search file:</td><td><input type="text" name="query" /></td></tr>
+				<tr><td></td><td><input type="submit" value="Search" /></td></tr>
+			</table>
+		</form>
+	</div>
+	<div>
 		<ul>
 			<li th:each="file : ${driveAPISearchData}"><a th:href="${file}"
 				th:text="${file}"></a></li>
 		</ul>
 
-		<table >
+		<table>
 			<thead>
 				<tr>
 					<th>Tên file</th>
@@ -34,11 +42,11 @@
 				</tr>
 			</thead>
 			<tbody>
-				<tr th:each="file : $${driveAPISearchData}"
+				<tr th:each="file : ${driveAPISearchData}"
 					style="margin: auto auto; border: 1px solid #000; background: #f3f3f3">
-					<td class="fileName" width="10%">file.getName()</td>
-					<td class="fileID" width="10%">file.getId()</td>
-					<td class="fileMimeType" width="10%">file.getMimeType()</td>
+					<td class="fileName" width="10%" th:text="${file.getName()}"></td>
+					<td class="fileID" width="10%" th:text="${file.getId()}"></td>
+					<td class="fileMimeType" width="10%" th:text="${file.getMimeType()}"></td>
 					<td class="" width="7%"><button onclick="">Download</button></td>
 				</tr>
 			</tbody>

@@ -54,7 +54,7 @@ public class FileUploadController {
                 .header(HttpHeaders.CONTENT_DISPOSITION, "attachment; filename=\""+file.getFilename()+"\"")
                 .body(file);
     }
-    @GetMapping("/Search")
+    @GetMapping("/search")
     public String handleFileSearch(@RequestParam("query") String query, Model model){
     	model.addAttribute("driveAPISearchData", storageService.driveAPISearch(query));    	
     	return "uploadForm";
