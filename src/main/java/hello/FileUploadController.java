@@ -41,7 +41,7 @@ public class FileUploadController {
                                 .build().toString())
                 .collect(Collectors.toList()));
 
-        return "uploadForm";
+        return "jsp/test";
     }
 
     @GetMapping("/files/{filename:.+}")
@@ -57,7 +57,7 @@ public class FileUploadController {
     @GetMapping("/search")
     public String handleFileSearch(@RequestParam("query") String query, Model model){
     	model.addAttribute("driveAPISearchData", storageService.driveAPISearch(query));    	
-    	return "uploadForm";
+    	return "test";
     }
     @PostMapping("/")
     public String handleFileUpload(@RequestParam("file") MultipartFile file,
